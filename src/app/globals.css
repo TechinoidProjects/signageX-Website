@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@config "../../tailwind.config.js";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #111827;
+  --color-primary: #8B5CF6; /* Purple 300 */
+  --color-back-primary: #120334; /* Dark Purple */
+  --color-deep-purple-500: #2B1B50;
+  --color-primary-foreground: #FFFFFF;
+  --color-background-light: #F3F3F7;
+  --color-secondary: #10B981; /* Success 500 */
+  --color-secondary-foreground: #FFFFFF;
+  --color-accent: #EF4444; /* Danger 500 */
+  --color-accent-foreground: #FFFFFF;
+  --color-gray-900: #111827; /* Headings */
+  --color-gray-800: #1F2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4B5563;
+  --color-gray-500: #6B7280; /* Description */
+  --color-gray-400: #9CA3AF;
+  --color-gray-300: #D1D5DB;
+  --color-gray-200: #E5E7EB; /* Border */
+  --color-gray-100: #F3F4F6;
+  --color-gray-50: #F9FAFB;
+  --color-purple-500: #553896;
+  --color-purple-400: #6140AC;
+  --color-purple-300: #8B5CF6;
+  --color-purple-200: #9F78F8;
+  --color-purple-100: #BCA0FA;
+  --color-purple-75: #CFBCFB;
+  --color-purple-50: #E3EFFE;
+  --color-purple-25: #F6F4FA;
+  --color-success-500: #10B981;
+  --color-success-50: #ECFCF5;
+  --color-warning-500: #F59E0B;
+  --color-warning-50: #FFFBE8;
+  --color-danger-500: #EF4444;
+  --color-danger-50: #FEF2F2;
+  --color-neutral-75: #BFC6CF;
+  --color-neutral-100: #A5AEBC;
+  --color-neutral-200: #7E8C9F;
+  --color-neutral-300: #64748B;
+  --color-neutral-400: #465161;
+  --color-neutral-500: #3D4755;
+  --color-white: #FFFFFF;
+  --color-composition-primary: #8B5CF6;
+  --color-composition-light: #BCA0FA;
+  --color-campaign-primary: #F34822;
+  --color-campaign-light: #6140AC;
+  --color-data-feed-primary: #66D575;
+  --color-data-feed-light: #CDF4D2;
+  --color-play-list-primary: #F849C1;
+  --color-play-list-light: #FFC2EC;
+  --color-app-primary: #3CADFF;
+  --color-app-light: #C2E5FF;
+  --color-audio-primary: #FFC942;
+  --color-audio-light: #FFECBD;
+  --color-plugin-primary: #5AD8CC;
+  --color-plugin-light: #C7F9EA;
+  --font-size-heading-h1: 30px;
+  --line-height-heading-h1: 36px;
+  --letter-spacing-heading-h1: 0;
+  --font-weight-heading-h1: 600;
+  /* Display XL (for large hero headings) */
+  --font-family-display: var(--font-sans);
+  --font-size-display-xl: 60px;
+  --line-height-display-xl: 72px;
+  --font-weight-display-xl: 500;
+  --letter-spacing-display-xl: -0.02em; /* -2% approximated */
+  --paragraph-spacing-display-xl: 60px;
+  --font-size-heading-h2: 20px;
+  --line-height-heading-h2: 32px;
+  --letter-spacing-heading-h2: -0.02em;
+  --font-weight-heading-h2: 600;
+  --font-weight-body: 400;
+  --font-size-title: 16px;
+  --line-height-title: 24px;
+  --letter-spacing-title: 0;
+  --font-size-subhead: 14px;
+  --line-height-subhead: 20px;
+  --letter-spacing-subhead: 0;
+  --font-size-body: 12px;
+  --line-height-body: 16px;
+  --letter-spacing-body: 0.05em;
+  --font-sans: 'Inter', 'Ag', sans-serif;
+  --font-mono: 'JetBrains Mono';
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-bs: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  /* Button size tokens (Figma specs) */
+  --btn-large-width: 144px;
+  --btn-large-height: 42px;
+  --btn-large-radius: 6px;
+  --btn-large-py: 9px;
+  --btn-large-px: 17px;
+
+  --btn-base-width: 120px;
+  --btn-base-height: 38px;
+  --btn-base-radius: 6px;
+  --btn-base-py: 9px;
+  --btn-base-px: 17px;
+
+  --btn-sm-width: 101px;
+  --btn-sm-height: 34px;
+  --btn-sm-radius: 6px;
+  --btn-sm-py: 9px;
+  --btn-sm-px: 13px;
+
+  --btn-xs-width: 86px;
+  --btn-xs-height: 30px;
+  --btn-xs-radius: 4px;
+  --btn-xs-py: 7px;
+  --btn-xs-px: 11px;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(92deg, #0F0031 -5.73%, #413263 120.63%);
+  --dark-gradient: linear-gradient(92deg, #0F0031 -5.73%, #413263 120.63%);
+  --gradient-large-circle: linear-gradient(132deg, #2B1E4A -18.69%, #3E305E 89.53%);
+  --gradient-middle-circle: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.10) 100%);
+
+  /* Button disabled state */
+  --btn-disabled-bg: #8B5CF6;
+  --btn-disabled-opacity: 0.5;
+  
+  /* Badge button tokens (Figma specs) */
+  --badge-height: 32px;
+  --badge-radius: 8px;
+  --badge-py: 6px;
+  --badge-px: 12px;
+  
+  /* Badge group variables */
+  --badge-group-gap: 0.5rem; /* default gap, matches tailwind gap-2 */
+  
+  /* Validation colors */
+  --error-border: #FCA5A5;
+  --success-bg: #D1FAE5;
+  --success-icon: #065F46;
+  /* Input tokens (Figma specs) */
+  --input-radius: 6px;
+  --input-border-width: 1px;
+  --input-padding-y: 9px; /* top/bottom */
+  --input-padding-x: 13px; /* left/right */
+  --input-height: 38px;
+}
+
+/* Custom utilities */
+.bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+/* Dark gradient utility to match usage in components */
+.bg-dark-gradient {
+  background-image: var(--dark-gradient);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite;
+}
+
