@@ -16,10 +16,10 @@ export default function WhyChooseSignageX() {
   ];
 
   return (
-    <section className="bg-back-primary w-full flex justify-center items-center py-16 px-4">
+    <section className="bg-back-primary w-full flex justify-center items-center py-8 md:py-16 px-4">
       <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
         {/* Header */}
-        <div className="flex flex-col justify-between items-center text-center pb-8 gap-6">
+        <div className="flex flex-col justify-between items-center text-center pb-8 gap-2 md:gap-6">
           <Badge text="Why Choose Us" icon={Dices} variant="outline" color="white" />
 
           <Heading

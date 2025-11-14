@@ -27,9 +27,9 @@ const features = [
 export default function SignageSolutions() {
   
   return (
-    <section className="bg-background-light w-full flex justify-center items-center py-16 px-4">
+    <section className="bg-background-light w-full flex justify-center items-center py-8 md:py-16 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4 ">
-        <div className="flex flex-col justify-between items-center pb-16 gap-6">
+        <div className="flex flex-col justify-between items-center pb-8 md:pb-16 gap-2 md:gap-6">
           {/* Badge */}
           <Badge
             text="our solutions"
@@ -52,7 +52,7 @@ export default function SignageSolutions() {
                 alt="AI Digital Signage"
                 width={540}
                 height={400}
-                className="object-cover relative rounded-3xl overflow-hidden bg-white shadow-xl w-full"
+                className="object-cover relative rounded-3xl overflow-hidden bg-white shadow-xl w-full h-full"
                 priority
               />
           </div>
@@ -79,21 +79,6 @@ export default function SignageSolutions() {
               <Button color="purple"  href="#">
                 Get Yours Now
               </Button>
-              {/* <Link
-                href="/get-started"
-                className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-white font-[Lato] text-[16px] font-semibold 
-                bg-[linear-gradient(92deg,#0F0031_-5.73%,#413263_120.63%)] hover:opacity-90 transition-all duration-200"
-              >
-                Start Free Trial
-              </Link>
-
-              <button
-                className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-[Lato] text-[16px] font-semibold text-[#0F0031]
-                bg-white border border-[#0F0031]/20 shadow-sm hover:bg-gray-50 transition-all duration-200"
-              >
-                <PlayCircle className="w-5 h-5 text-[#0F0031]" />
-                Watch Demo
-              </button> */}
             </div>
           </div>
         </div>

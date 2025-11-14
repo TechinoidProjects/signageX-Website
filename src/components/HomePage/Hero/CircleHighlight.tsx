@@ -21,9 +21,9 @@ export const CircleHighlight: React.FC<CircleHighlightProps> = ({
       bg-gradient-primary
       ${className}`}
     >
-      <Icon className="w-7 h-7 mb-2 opacity-90" />
-      <p className="text-2xl font-bold">{value}</p>
-      <p className="text-sm opacity-90">{label}</p>
+      <Icon className="w-15 h-15 md:w-7 md:h-7 mb-2 opacity-90" />
+      <p className="text-4xl md:text-2xl font-bold">{value}</p>
+      <p className="text-xl md:text-sm opacity-90">{label}</p>
     </div>
   );
 };

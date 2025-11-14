@@ -8,9 +8,9 @@ import { ActionButton } from "@/components/ui/action-button";
 
 export default function HeroSection() {
   return (
-    <section className="w-full flex justify-center items-center h-full md:h-[105vh]">
-        <div className=" w-full px-6 flex flex-col items-center justify-between py-5 md:relative h-full">
-        <div className="flex flex-col items-center gap-6 container">
+    <section className="w-full flex justify-center items-center h-full md:h-[50vh] xl:h-[105vh]">
+        <div className=" w-full px-4 md:px-6 flex flex-col items-center justify-between py-5 md:relative h-full">
+        <div className="flex flex-col items-center gap-2 container">
             <Badge text="Powered by AI" icon={Sparkles} variant="outline" color="custom" />
             <Heading
             title="Digital Signage Experience, Paired With AI"
@@ -36,7 +36,7 @@ export default function HeroSection() {
                 </ActionButton>
             </div>
         </div>
-        <div className=" md:absolute top-60 flex justify-center w-full px-8">
+        <div className=" md:absolute top-60 flex justify-center w-full px-0 md:px-8">
             <GlobalStatsGrid/>
         </div>
         </div>

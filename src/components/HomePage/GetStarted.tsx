@@ -9,9 +9,9 @@ import { Cable } from "../../../public/svg/Cable";
 
 export default function GetStarted() {
   return (
-    <section className="w-full flex justify-center items-center py-16 px-4 bg-background-light">
+    <section className="w-full flex justify-center items-center py-8 md:py-16 px-4 bg-background-light">
       <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
-        <div className="flex flex-col justify-between items-center pb-16 gap-6">
+        <div className="flex flex-col justify-between items-center pb-8 gap-2 md:pb-16 md:gap-6">
           {/* Badge */}
           <Badge
             text="get started"
@@ -28,7 +28,7 @@ export default function GetStarted() {
         </div>
 
         {/* Steps */}
-        <div className="flex w-full items-center justify-center flex-col md:flex-row md:flex-wrap gap-6">
+        <div className="flex w-full items-center md:justify-start justify-center flex-col md:flex-row md:flex-wrap gap-6">
           <StepCard
             title="1. Create Your Account"
             description="Sign up for a SignageX account to access our AI-powered digital signage platform."

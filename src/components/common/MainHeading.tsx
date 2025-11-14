@@ -21,10 +21,11 @@ export const Heading: React.FC<HeadingProps> = ({
   subtitleColorClass = "text-neutral-300", // default Tailwind class
 }) => {
   const sizes = {
-    sm: "text-2xl",
-    md: "text-3xl",
-    lg: "text-4xl",
-    xl: "text-[56px] leading-[58px]",
+    sm: "text-xl md:text-2xl ",
+    md: "text-xl md:text-3xl",
+    lg: "text-2xl md:text-4xl",
+    // xl: "text-[56px] leading-[58px]",
+    xl: "text-[45px] md:text-[56px] md:leading-[58px] leading-11",
   };
 
   return (
@@ -49,7 +50,7 @@ export const Heading: React.FC<HeadingProps> = ({
       {subtitle && (
         <p
           className={clsx(
-            "mt-3 text-[20px] font-[Lato] max-w-[818px]",
+            "mt-3 md:text-[20px] text-[15px] font-[Lato] md:max-w-[818px]",
             subtitleColorClass
           )}
         >

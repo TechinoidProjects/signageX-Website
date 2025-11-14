@@ -24,7 +24,7 @@ const VideoThumbnail: React.FC<VideoThumbnailProps> = ({
   // If playing and youtubeSource is provided, show YouTube embed
   if (isPlaying && youtubeSource) {
     return (
-      <div className="relative w-80 md:w-full aspect-video mx-auto  h-full max-h-150 rounded-xl overflow-hidden">
+      <div className="relative w-100 md:w-full aspect-video mx-auto  h-full max-h-150 rounded-xl overflow-hidden">
         <iframe
           width="100%"
           height="100%"
@@ -42,7 +42,7 @@ const VideoThumbnail: React.FC<VideoThumbnailProps> = ({
   // Otherwise, show thumbnail
   return (
     <div
-      className="relative w-80 md:w-full aspect-video h-full max-h-150 mx-auto group overflow-hidden rounded-3xl"
+      className="relative w-100 md:w-full aspect-video h-full max-h-150 mx-auto group overflow-hidden rounded-3xl"
     >
       <Image
         src={thumbnail}

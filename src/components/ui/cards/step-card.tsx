@@ -19,12 +19,12 @@ const StepCard: React.FC<StepCardProps> = ({
   gradientClass = "bg-gradient-primary",
 }) => {
   return (
-    <div className="w-full md:max-w-[32%]">
+    <div className="w-full md:w-[31.7%] xl:max-w-[32%]">
       <div
         className={`relative w-full flex flex-col justify-between ${gradientClass} h-[417px] rounded-3xl shadow-card p-6 overflow-hidden transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl`}
       >
         {/* Nested Circles */}
-        <div className="absolute bottom-40 left-0 right-0 flex items-start justify-center pt-12">
+        <div className="absolute bottom-40 md:bottom-50 xl:bottom-40 left-0 right-0 flex items-start justify-center pt-12 md:pt-8 xl:pt-12">
           {/* Large Circle */}
           <div className="flex justify-center items-center h-[435px] w-[435px] pt-[26px] pr-[87.5px] pb-[43px] pl-[87.5px] rounded-[10069px] bg-[linear-gradient(132deg,#2B1E4A_-18.69%,#3E305E_89.53%)]">
             {/* Middle Circle */}

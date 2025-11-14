@@ -62,9 +62,9 @@ export const FeatureTabs: React.FC = () => {
   const activeContent = tabs.find((tab) => tab.id === activeTab)!;
 
   return (
-    <section className="w-full flex justify-center items-center py-16 px-4">
+    <section className="w-full flex justify-center items-center py-8 md:py-16 px-4">
         <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4">
-            <div className="flex flex-col justify-between items-center pb-16 gap-6">
+            <div className="flex flex-col justify-between items-center pb-2 md:pb-16 gap-2 md:gap-6">
                 {/* Badge */}
                 <Badge
                 text="Effortless"
@@ -127,10 +127,10 @@ export const FeatureTabs: React.FC = () => {
                   </div>
 
                   <div className="p-6">
-                  <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+                  <h2 className="text-2xl font-display font-semibold text-gray-900 mb-2">
                       {activeContent.heading}
                   </h2>
-                  <p className="text-gray-600">{activeContent.subheading}</p>
+                  <p className="text-gray-600 font-sans">{activeContent.subheading}</p>
                   </div>
               </div>
             </div>

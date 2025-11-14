@@ -7,10 +7,10 @@ import LicenseSelector from "./LicenseSelector";
 
 export default function GetStarted() {
   return (
-    <section className="w-full flex justify-center items-center py-20 bg-white">
-      <div className="container mx-auto flex flex-col justify-center items-center px-4">
+    <section className="w-full flex justify-center items-center py-8 md:py-16 px-4 bg-white">
+      <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
         {/* Badge + Heading */}
-        <div className="flex flex-col justify-between items-center pb-16 gap-6 text-center">
+        <div className="flex flex-col justify-between items-center pb-8 md:pb-16 gap-2 md:gap-6 text-center">
           <Badge
             text="Pricing"
             icon={Dices}
@@ -29,7 +29,7 @@ export default function GetStarted() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="w-full flex flex-col md:flex-row md:flex-wrap gap-6 justify-center items-stretch">
+        <div className="w-full flex flex-col md:flex-row md:flex-wrap gap-6 md:justify-start justify-center items-stretch">
           <PricingCard
             title="Basic"
             subtitle="Best for startups"
