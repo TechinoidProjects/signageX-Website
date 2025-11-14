@@ -30,7 +30,9 @@ const Footer = () => {
             <div className="space-y-6 flex flex-col justify-between">
               <div>
                 <div className="pb-6">
-                  <Image src="/logo-light.svg" alt="Logo" width={90} height={30} priority />
+                  <Link href="/">
+                    <Image src="/logo-light.svg" alt="Logo" width={90} height={30} priority />
+                  </Link>
                 </div>
                 <h3 className="text-lg font-semibold mb-3">
                   Digital Signage Experience, Paired With AI
@@ -110,7 +112,9 @@ const Footer = () => {
           <div className="flex flex-col md:hidden gap-8 pb-6 border-b border-white/10">
             {/* Logo and text */}
             <div className="text-center space-y-4">
-              <Image src="/logo-light.svg" alt="Logo" width={90} height={30} priority className="mx-auto" />
+              <Link href="/">
+                <Image src="/logo-light.svg" alt="Logo" width={90} height={30} priority className="mx-auto" />
+              </Link>
               <p className="text-sm text-gray-300 leading-relaxed max-w-xs mx-auto">
                 Create, manage, and optimize digital signage faster with AI-driven tools for seamless, dynamic experiences on any screen.
               </p>

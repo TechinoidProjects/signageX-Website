@@ -39,13 +39,15 @@ const Navbar = () => {
 
         {/* Center Logo */}
         <div className="absolute left-1/2 -translate-x-1/2">
-          <Image
-            src="/logo-black.png"
-            alt="Logo"
-            width={90}
-            height={30}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo-black.png"
+              alt="Logo"
+              width={90}
+              height={30}
+              priority
+            />
+          </Link>
         </div>
 
         {/* Right Buttons */}
@@ -66,13 +68,15 @@ const Navbar = () => {
       <nav className="flex md:hidden items-center justify-between px-4 h-16 relative">
         {/* Logo */}
         <div>
-          <Image
-            src="/logo-black.png"
-            alt="Logo"
-            width={80}
-            height={28}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="/logo-black.png"
+              alt="Logo"
+              width={80}
+              height={28}
+              priority
+            />
+          </Link>
         </div>
 
         {/* Hamburger Icon */}
