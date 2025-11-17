@@ -5,9 +5,9 @@ import { Dices } from "lucide-react";
 
 export default function Industries() {
   return (
-    <section className="bg-white w-full flex justify-center items-center py-16 px-4">
+    <section className="bg-white w-full flex justify-center items-center py-8 md:py-16 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4 ">
-        <div className="flex flex-col justify-between items-center pb-16 gap-6">
+        <div className="flex flex-col justify-between items-center pb-8 md:pb-16 gap-2 md:gap-6">
           {/* Badge */}
           <Badge
             text="industries"
