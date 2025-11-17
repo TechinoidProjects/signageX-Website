@@ -10,7 +10,7 @@ interface ImageCardProps {
 export const ImageCard: React.FC<ImageCardProps> = ({ src, alt, className }) => {
   return (
     <div
-      className={`bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
+      className={`bg-white rounded-2xl overflow-hidden hidden md:block shadow-md hover:shadow-xl transition-all duration-300 ${className}`}
     >
       <Image
         src={src}
