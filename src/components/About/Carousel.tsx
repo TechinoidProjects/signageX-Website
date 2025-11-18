@@ -1,6 +1,7 @@
 import { Badge } from "../ui/badge-default";
 import { Heading } from "../common/MainHeading";
 import StoryCarousel, { StorySlide } from "@/components/ui/carousels/story-carousel";
+import { GlobalStatsGrid } from "@/components/About/StatsGrid";
 import { Dices } from "lucide-react";
 
 const slides: StorySlide[] = [
@@ -43,6 +44,9 @@ export default function AboutCarousel() {
                 />
             </div>
             <StoryCarousel slides={slides} />
+            <div className=" w-full ">
+              <GlobalStatsGrid/>
+            </div>
         </div>
 
     </section>
