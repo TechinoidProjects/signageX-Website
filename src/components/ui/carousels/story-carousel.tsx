@@ -30,8 +30,7 @@ export default function StoryCarousel({ slides, className }: StoryCarouselProps)
         <h2 className="text-3xl font-bold mb-6">{slide.heading}</h2>
         <p className="text-lg font-semibold mb-4 opacity-90">{slide.year}</p>
         <div
-          className="max-w-4xl mx-auto text-base opacity-80 leading-relaxed
-                min-h-30 flex items-center"
+          className="max-w-4xl mx-auto text-base opacity-80 leading-relaxed min-h-30 flex items-center"
         >
           <p className="text-center">{slide.description}</p>
         </div>
