@@ -1,6 +1,7 @@
 import AboutCarousel from "@/components/About/Carousel";
 import TrustSection from "@/components/About/TrustSection";
 import OurMission from "@/components/About/OurMission";
+import {WhyChooseUs} from "@/components/About/WhyChooseUs/index";
 
 
 export default function AllIndustries() {
@@ -9,6 +10,7 @@ export default function AllIndustries() {
         <AboutCarousel/>
         <TrustSection/>
         <OurMission/>
+        <WhyChooseUs/>
 
     </main>
   );
