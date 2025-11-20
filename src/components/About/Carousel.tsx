@@ -29,7 +29,7 @@ const slides: StorySlide[] = [
 export default function AboutCarousel() {
   return (
 
-    <section className="w-full flex justify-center items-center py-6 px-4">
+    <section className="w-full flex justify-center items-center py-12 px-4">
         <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4">
             <div className="flex flex-col justify-between items-center py-6 gap-6">
                 <Badge

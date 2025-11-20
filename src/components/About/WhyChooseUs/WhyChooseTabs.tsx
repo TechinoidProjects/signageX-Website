@@ -59,7 +59,7 @@ export const WhyChooseTabs = () => {
 
   return (
     <section className="w-full flex justify-center items-center">
-      <div className="grid grid-cols-12 gap-10">
+      <div className="md:grid md:grid-cols-12 flex flex-col gap-10">
 
         <div className="col-span-12 lg:col-span-5 rounded-2xl overflow-hidden">
           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
@@ -112,7 +112,7 @@ export const WhyChooseTabs = () => {
 
                         <div className="flex flex-col gap-2 mb-2">
                           <div className="flex items-center gap-3">
-                            <h3 className="text-lg font-semibold text-neutral-800">
+                            <h3 className="md:text-lg text-md font-semibold text-neutral-800">
                               {item.heading}
                             </h3>
                             
@@ -122,6 +122,7 @@ export const WhyChooseTabs = () => {
                               color="deepPurple"
                               showIcon={false}
                               size="sm"
+                              className="hidden! md:inline-flex!"
                             />
                           </div>
                           <p className="text-neutral-600 leading-relaxed text-left">

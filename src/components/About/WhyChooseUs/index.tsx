@@ -3,7 +3,7 @@
 import { Dices } from "lucide-react";
 import { Badge } from "@/components/ui/badge-default";
 import { Heading } from "@/components/common/MainHeading";
-import {WhyChooseTabs} from "@/components/About/WhyChooseUs/WhyChooseTabs";
+import {WhyChooseTabs} from "./WhyChooseTabs";
 
 
 export const WhyChooseUs = () => {
