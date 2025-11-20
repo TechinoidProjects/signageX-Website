@@ -2,10 +2,15 @@ import React from "react";
 import clsx from "clsx";
 import { LucideIcon } from "lucide-react";
 
+
 const COLOR_MAP = {
   purple: {
     solid: "bg-purple-100 text-purple-600 border-purple-200",
     outline: "bg-transparent text-purple-400 border-purple-400",
+  },
+  neutral:{
+    solid: "bg-background-light text-neutral-500 border-0",
+    outline: "bg-transparent text-neutral-500 border-neutral-400",
   },
   white:{
     solid: "bg-white text-gray-900 border-gray-300",
@@ -83,6 +88,10 @@ const COLOR_MAP = {
     solid: "bg-gray-100 text-gray-600 border-gray-200",
     outline: "bg-transparent text-gray-500 border-gray-400",
   },
+  grayPurple: {
+    solid: "bg-gray-200 text-purple-600 border-gray-200",
+    outline: "bg-transparent text-gray-500 border-gray-400",
+  },
   zinc: {
     solid: "bg-zinc-100 text-zinc-700 border-zinc-200",
     outline: "bg-transparent text-zinc-500 border-zinc-400",
@@ -90,6 +99,10 @@ const COLOR_MAP = {
   custom: {
     solid: "bg-purple-400/[0.04] text-purple-400 border-purple-75",
     outline: "bg-transparent text-purple-400 border-purple-200",
+  }, 
+  deepPurple: {
+    solid: "bg-deep-purple-500 text-white border-deep-purple-500 border-0",
+    outline: "bg-transparent text-deep-purple-500 border-deep-purple-500",
   }
 } as const;
 
@@ -98,17 +111,21 @@ export type BadgeColor = keyof typeof COLOR_MAP;
 interface BadgeProps {
   text: string;
   icon?: LucideIcon;
+  showIcon?: boolean;       
+  size?: "sm" | "md" | "lg";  // ⭐ NEW SIZE PROP
   variant?: "solid" | "outline";
   color?: BadgeColor;
-  textColor?: string; 
-  borderColor?: string; 
-  bgColor?: string; 
+  textColor?: string;
+  borderColor?: string;
+  bgColor?: string;
   className?: string;
 }
 
 export const Badge: React.FC<BadgeProps> = ({
   text,
   icon: Icon,
+  showIcon = true,
+  size = "md",
   variant = "solid",
   color = "purple",
   textColor,
@@ -119,18 +136,32 @@ export const Badge: React.FC<BadgeProps> = ({
   const palette = COLOR_MAP[color] ?? COLOR_MAP.purple;
   const variantClasses = variant === "solid" ? palette.solid : palette.outline;
 
+  const sizeClasses = {
+    sm: "px-2.5 py-1 text-xs",
+    md: "px-4 py-1.5 text-sm",
+    lg: "px-5 py-2 text-base",
+  }[size];
+
+  const iconSize = {
+    sm: "w-3 h-3",
+    md: "w-4 h-4",
+    lg: "w-5 h-5",
+  }[size];
+
   return (
     <div
       className={clsx(
-        "inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium border transition-all my-3",
+        "inline-flex items-center gap-2 rounded-full font-medium border transition-all my-3",
         variantClasses,
+        sizeClasses,
         bgColor,
         textColor,
         borderColor,
         className
       )}
     >
-      {Icon && <Icon className="w-4 h-4" />}
+      {Icon && showIcon && <Icon className={iconSize} />}
+
       <span className="uppercase">{text}</span>
     </div>
   );

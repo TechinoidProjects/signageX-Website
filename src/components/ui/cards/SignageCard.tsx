@@ -29,7 +29,7 @@ const SignageCard: React.FC<SignageCardProps> = ({
 
       {/* Image (optional) */}
       {showImage && (
-        <div className="relative mt-6 flex justify-center w-full max-w-60 sm:max-w-[280px] md:max-w-[320px] mx-auto">
+        <div className="relative mt-6 flex items-center h-full justify-center w-full max-w-100 md:max-w-[320px] mx-auto">
           <div className="absolute inset-0 bg-[#7F56D9] opacity-40 blur-2xl rounded-full w-3/4 h-3/4 mx-auto" />
           <Image
             src={imageSrc}
