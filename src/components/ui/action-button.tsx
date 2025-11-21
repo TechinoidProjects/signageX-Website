@@ -46,9 +46,9 @@ export const ActionButton: React.FC<ActionButtonProps> = ({
   };
 
   const sizes: Record<ActionButtonSize, string> = {
-    sm: "h-9 px-3 text-sm",
-    md: "h-11 px-5 text-base",
-    lg: "h-12 px-6 text-lg",
+    sm: "h-9 text-sm w-40",
+    md: "h-11 text-base w-50",
+    lg: "h-12 text-lg w-70",
   };
 
   const content = (
@@ -65,7 +65,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({
     variants[variant],
     sizes[size],
     className,
-    "gap-2 font-[Lato] w-70"
+    "gap-2 font-[Lato]"
   );
 
   if (href) {

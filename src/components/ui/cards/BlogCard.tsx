@@ -14,6 +14,7 @@ interface BlogCardProps {
   readTime?: string;
   direction?: "horizontal" | "vertical";
   color?: "invert" | "normal";
+  buttonSize?: "sm" | "md" | "lg";
 }
 
 export default function BlogCard({
@@ -27,19 +28,20 @@ export default function BlogCard({
   readTime = "7",
   direction = "horizontal",
   color = "normal",
+  buttonSize = "md",
 }: BlogCardProps) {
   const isHorizontal = direction === "horizontal";
   const isColor = color === "normal";
 
   return (
     <div
-      className={` w-full rounded-2xl shadow-sm overflow-hidden flex 
-        ${isHorizontal ? "flex-row" : "flex-col"}
+      className={` w-full rounded-2xl shadow-sm overflow-hidden flex
+        ${isHorizontal ? "md:flex-row flex-col" : "md:flex-col"}
         ${isColor ? "bg-white" : "bg-background-light"}
       `}
     >
       {/* IMAGE */}
-      <div className={` relative  ${isHorizontal ? "w-1/2 h-64 md:h-auto" : "w-full h-64"} `} >
+      <div className={` relative  ${isHorizontal ? "md:w-1/2 w-full h-64 md:h-100" : "w-full h-64"} `} >
         <Image
           src={image}
           alt={title}
@@ -49,7 +51,7 @@ export default function BlogCard({
       </div>
 
       {/* CONTENT */}
-      <div className={` ${isHorizontal ? "w-1/2 p-3" : "w-full py-3 px-3"} `} >
+      <div className={` ${isHorizontal ? "md:w-1/2 w-full p-3" : "w-full py-3 px-3"} `} >
         <div className={`rounded-xl bg-background-light p-2 px-3 h-full flex flex-col justify-between 
           ${isColor ?  "bg-background-light" : "bg-white"}`} >
           <div>
@@ -58,28 +60,28 @@ export default function BlogCard({
               variant="solid"
               color="grayPurple"
               showIcon={false}
-              size="sm"
+              size={buttonSize}
             />
 
-            <p className="text-sm text-gray-500 mt-3">
+            <p className="text-sm text-gray-500 mt-3 font-sans">
               {date} By {author}
             </p>
 
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mt-3 leading-snug">
+            <h2 className="text-2xl md:text-3xl font-display font-semibold text-gray-900 mt-3 leading-snug">
               {title}
             </h2>
 
-            <p className="text-gray-600 mt-3 line-clamp-3">{description}</p>
+            <p className="text-gray-600 mt-3 line-clamp-3 text-md font-sans">{description}</p>
           </div>
 
           <div className="flex items-center justify-between mt-4 w-full">
-            <p className={`text-sm text-gray-500 ${isHorizontal ? "w-80" : "w-full"}`}>{readTime} min read</p>
+            <p className={`text-sm text-gray-500 ${isHorizontal ? "w-1/2" : "w-full"}`}>{readTime} min read</p>
             <ActionButton
               href={readMoreHref}
               variant="primary"
               size="md"
               iconRight={<ArrowRight className="w-5 h-5" />}
-              className="w-20"
+              className="w-1/2"
             >
               Read More
             </ActionButton>
