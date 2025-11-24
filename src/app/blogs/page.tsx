@@ -1,6 +1,7 @@
 import Hero from "@/components/Blog/Hero";
 import FeaturedBlogs from "@/components/Blog/FeaturedBlogs";
 import SearchAndFilter from "@/components/Blog/AllBlogs";
+import CTA from "@/components/common/CTA/index"
 
 interface Blog {
   id: number;
@@ -130,7 +131,6 @@ const blogs: Blog[] = [
     title: "How to Design Effective Digital Displays",
     description: "Great UI design improves readability and user engagement...",
   }
-  // more blogs...
 ];
 export default function AllBlogs() {
   return (
@@ -138,6 +138,7 @@ export default function AllBlogs() {
         <Hero/>
         <FeaturedBlogs/>
         <SearchAndFilter blogs={blogs} />
+        <CTA/>
     </main>
   );
 }

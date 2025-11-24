@@ -85,7 +85,7 @@ export default function SearchAndFilter({ blogs }: { blogs: Blog[] }) {
             setPage(1);
           }}
         />
-        <button className="px-5 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700">
+        <button className="px-5 py-2 bg-purple-300 text-white rounded-full hover:bg-purple-400">
           Search
         </button>
       </div>
@@ -101,7 +101,7 @@ export default function SearchAndFilter({ blogs }: { blogs: Blog[] }) {
             className={`px-4 py-2 rounded-full text-sm transition-all border 
               ${
                 activeTab === cat
-                  ? "bg-purple-600 text-white border-purple-600"
+                  ? "bg-purple-300 text-white border-purple-300"
                   : "bg-gray-100 text-gray-600 border-transparent hover:bg-gray-200"
               }`}
           >
