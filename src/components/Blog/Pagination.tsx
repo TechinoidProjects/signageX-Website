@@ -1,3 +1,4 @@
+import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 interface PaginationProps {
   page: number;
   totalPages: number;
@@ -9,13 +10,20 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
     <div className="flex gap-3 items-center">
 
       {/* Prev */}
-      <button
+      {/* <button
         disabled={page === 1}
-        onClick={() => onChange(page - 1)}
+        
         className={`px-4 py-2 rounded-lg border 
         ${page === 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-gray-100"}`}
       >
         Prev
+      </button> */}
+
+      <button
+        onClick={() => onChange(page - 1)}
+        className={`${page === 1 ? "opacity-40 cursor-not-allowed" : "hover:border-neutral-400/60"} w-10 h-10 flex items-center justify-center rounded-full border-3 border-neutral-400/30 transition`}
+      >
+        <ArrowBigLeft className="w-5 h-5 text-neutral-700" />
       </button>
 
       {/* Page Numbers */}
@@ -23,10 +31,10 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
         <button
           key={num}
           onClick={() => onChange(num)}
-          className={`px-4 py-2 rounded-lg border transition 
+          className={`px-4 py-2 rounded-lg transition 
             ${
               num === page
-                ? "bg-purple-600 text-white border-purple-600"
+                ? "bg-purple-300 text-white border-purple-300"
                 : "bg-white text-gray-700 hover:bg-gray-100"
             }`}
         >
@@ -35,7 +43,7 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
       ))}
 
       {/* Next */}
-      <button
+      {/* <button
         disabled={page === totalPages}
         onClick={() => onChange(page + 1)}
         className={`px-4 py-2 rounded-lg border 
@@ -46,6 +54,16 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
         }`}
       >
         Next
+      </button> */}
+      <button
+        onClick={() => onChange(page + 1)}
+        className={`w-10 h-10 flex items-center justify-center rounded-full border-3 border-neutral-400/30 transition ${
+          page === totalPages
+            ? "opacity-40 cursor-not-allowed "
+            : "hover:border-neutral-400/60"
+        }`}
+      >
+        <ArrowBigRight className="w-5 h-5 text-neutral-700" />
       </button>
     </div>
   );
