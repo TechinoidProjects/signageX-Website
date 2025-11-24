@@ -8,18 +8,16 @@ export const GlobalStatsGrid = () => {
     <section className="w-full bg-transparent py-12 ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        {/* Left column */}
         <div className="flex flex-col gap-4">
           <StatCard
             icon={Globe2}
             value="25+"
             label="Countries Worldwide"
-            className="rounded-full"
+            className="rounded-2xl md:rounded-full"
           />
           <ImageCard src="/images/about-grid-four.jpg" alt="Display 1" imageHeight="h-full"/>
         </div>
 
-        {/* Center-left */}
         <div className="flex flex-col gap-4">
           <ImageCard src="/images/about-grid-two.jpg" alt="Display 1" imageHeight="h-full"/>
           <StatCard
@@ -30,18 +28,16 @@ export const GlobalStatsGrid = () => {
           />
         </div>
 
-        {/* Center Circle */}
-        <div className="flex flex-col gap-4">
-          <ImageCard src="/images/about-grid-one.jpg" alt="Display 1" imageHeight="h-40"/>
+        <div className="flex flex-col gap-4 h-full">
+          <ImageCard src="/images/about-grid-one.jpg" alt="Display 1" imageHeight="h-full"/>
           <StatCard
             icon={File}
             value="50k+"
             label="Software Sold"
-            className="rounded-full h-50!"
+            className="rounded-2xl md:rounded-full md:h-[71%]!"
           />
         </div>
 
-        {/* Right column */}
         <div className="flex flex-col gap-4">
           <ImageCard src="/images/about-grid-three.jpg" alt="Display 4" imageHeight="h-full"/>
           <StatCard

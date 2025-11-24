@@ -59,9 +59,9 @@ export const WhyChooseTabs = () => {
 
   return (
     <section className="w-full flex justify-center items-center">
-      <div className="md:grid md:grid-cols-12 flex flex-col gap-10">
+      <div className="flex flex-col md:flex-row gap-4 w-full">
 
-        <div className="col-span-12 lg:col-span-5 rounded-2xl overflow-hidden">
+        <div className="w-full md:w-[35%] rounded-2xl overflow-hidden">
           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
             <Image
               src={activeData.image}
@@ -72,7 +72,7 @@ export const WhyChooseTabs = () => {
           </div>
         </div>
 
-        <div className="col-span-12 lg:col-span-7 flex flex-col gap-4">
+        <div className="w-full md:w-[65%] flex flex-col gap-4">
 
           {FEATURES.map((item) => {
             const isActive = item.id === active;
@@ -80,7 +80,7 @@ export const WhyChooseTabs = () => {
             return (
               <div
                 key={item.id}
-                className={`rounded-2xl transition-all
+                className={`rounded-2xl transition-all w-full
                   ${isActive ? "bg-background-light" : ""}
                 `}
               >
@@ -108,7 +108,7 @@ export const WhyChooseTabs = () => {
                   </div>
 
                     {isActive && (
-                      <div className="px-4 pb-5 pt-2">
+                      <div className="w-full px-2 pb-5 pt-2">
 
                         <div className="flex flex-col gap-2 mb-2">
                           <div className="flex items-center gap-3">
