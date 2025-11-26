@@ -49,7 +49,7 @@ const steps: Step[] = [
     imageSrc: "/images/step-card-four.png",
   },
 ];
-const ExperienceFlow = () => {
+const HowItWorksFlow = () => {
   return (
     <section className="relative w-full overflow-hidden bg-[#050014] py-16 md:py-28">
       <div className="absolute inset-0 pointer-events-none">
@@ -88,4 +88,4 @@ const ExperienceFlow = () => {
   );
 };
 
-export default ExperienceFlow;
+export default HowItWorksFlow;
