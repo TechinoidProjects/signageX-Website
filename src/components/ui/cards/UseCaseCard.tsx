@@ -23,10 +23,10 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-sm mx-auto p-4 flex flex-col gap-4 ${className}`}
+      className={`bg-white rounded-2xl shadow-md overflow-hidden w-full max-w-lg mx-auto p-4 flex flex-col gap-4 ${className}`}
     >
       {/* Image */}
-      <div className="w-full h-48 relative">
+      <div className="w-full h-60 relative">
         <Image
           src={imageSrc}
           alt={title}
