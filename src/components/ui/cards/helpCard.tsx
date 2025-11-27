@@ -3,19 +3,21 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-interface DiscordCardProps {
+interface HelpCardProps {
   title?: string;
   avatars: string[];
   membersCount?: string;
   link: string;
+  logoSrc?: string;
 }
 
-export default function DiscordCard({
-  title = "Join Our Discord",
+export default function HelpCard({
+  title = "Join Our Help",
   avatars,
   membersCount = "+10k",
   link,
-}: DiscordCardProps) {
+  logoSrc ="/images/Discord.png",
+}: HelpCardProps) {
   return (
     <Link
       href={link}
@@ -29,7 +31,7 @@ export default function DiscordCard({
 
       <div className="flex justify-center">
         <Image
-          src="/discord-logo.svg"
+          src={logoSrc}
           alt="Discord Logo"
           width={48}
           height={48}
@@ -38,11 +40,13 @@ export default function DiscordCard({
 
       <h2 className="text-center text-lg font-semibold mt-3">{title}</h2>
 
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4 shrink-0">
         {avatars.slice(0, 4).map((avatar, index) => (
           <div
             key={index}
-            className="w-10 h-10 rounded-full overflow-hidden border-2 border-white"
+            className={`w-10 h-10 rounded-full overflow-hidden border-2 border-white ${
+              index !== 0 ? "-ml-3" : ""
+            }`}
           >
             <Image
               src={avatar}
@@ -54,10 +58,11 @@ export default function DiscordCard({
           </div>
         ))}
 
-        <div className="w-10 h-10 rounded-full bg-[#A78BFA] text-xs flex items-center justify-center text-white font-semibold">
+        <div className="-ml-3 w-10 h-10 rounded-full bg-[#A78BFA] text-xs flex items-center justify-center text-white font-semibold">
           {membersCount}
         </div>
       </div>
+
     </Link>
   );
 }
