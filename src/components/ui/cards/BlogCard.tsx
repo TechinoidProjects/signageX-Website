@@ -38,7 +38,7 @@ export default function BlogCard(props: BlogCardProps) {
   return (
     <div
       className={`w-full rounded-2xl shadow-sm overflow-hidden flex ${
-        isHorizontal ? "md:flex-row flex-col" : "md:flex-col"
+        isHorizontal ? "md:flex-row flex-col" : "flex-col"
       } ${isColor ? "bg-white" : "bg-background-light"}`}
     >
       {/* IMAGE */}
