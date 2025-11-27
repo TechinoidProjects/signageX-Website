@@ -44,14 +44,14 @@ export default function BlogCard(props: BlogCardProps) {
       {/* IMAGE */}
       <div
         className={`relative ${
-          isHorizontal ? "md:w-1/2 w-full h-64 md:h-100" : "w-full h-64"
+          isHorizontal ? "md:w-1/2 w-full h-64 md:h-100" : "w-full h-70"
         }`}
       >
         <Image src={image} alt={title} fill className="object-cover rounded-3xl p-3" />
       </div>
 
       {/* CONTENT */}
-      <div className={`${isHorizontal ? "md:w-1/2 w-full p-3" : "w-full py-3 px-3"}`}>
+      <div className={`${isHorizontal ? "md:w-1/2 w-full p-3" : "w-full py-3 px-3 h-90"}`}>
         <div
           className={`rounded-xl bg-background-light p-2 px-3 h-full flex flex-col justify-between ${
             isColor ? "bg-background-light" : "bg-white"

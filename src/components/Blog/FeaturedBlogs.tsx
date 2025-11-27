@@ -24,14 +24,14 @@ export default function FeaturedBlogs() {
         </div>
 
         <BlogCard
-            image="/images/blog-card-image-one.png"
-            category="Restaurants"
-            date="Sep 04, 2025"
-            author="Michael Kirnan"
-            title="AI Digital Signage Trends 2025"
-            description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-            readMoreHref="/blog/ai-digital-signage"
-            readTime="8"
+          image="/images/blog-card-image-one.png"
+          category="Restaurants"
+          date="Sep 04, 2025"
+          author="Michael Kirnan"
+          title="AI Digital Signage Trends 2025"
+          description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
+          readMoreHref="/blogs/ai-digital-signage"
+          readTime="8"
 
         />
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:py-10">
@@ -42,7 +42,7 @@ export default function FeaturedBlogs() {
                 author="Michael Kirnan"
                 title="AI Digital Signage Trends 2025"
                 description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-                readMoreHref="/blog/ai-digital-signage"
+                readMoreHref="/blogs/ai-digital-signage"
                 readTime="8"
 
             />
@@ -53,7 +53,7 @@ export default function FeaturedBlogs() {
                 author="Michael Kirnan"
                 title="AI Digital Signage Trends 2025"
                 description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-                readMoreHref="/blog/ai-digital-signage"
+                readMoreHref="/blogs/ai-digital-signage"
                 readTime="8"
 
             />
