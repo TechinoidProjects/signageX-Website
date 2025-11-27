@@ -25,7 +25,7 @@ export const Heading: React.FC<HeadingProps> = ({
     md: "text-xl md:text-3xl",
     lg: "text-2xl md:text-4xl",
     // xl: "text-[56px] leading-[58px]",
-    xl: "text-[45px] md:text-[56px] md:leading-[58px] leading-11",
+    xl: "text-4xl md:text-[3.5em] ",
   };
 
   return (
@@ -50,7 +50,7 @@ export const Heading: React.FC<HeadingProps> = ({
       {subtitle && (
         <p
           className={clsx(
-            "mt-3 md:text-[20px] text-[15px] font-[Lato] md:max-w-[818px]",
+            "mt-3 md:text-lg text-sm font-[Lato] md:max-w-[818px]",
             subtitleColorClass
           )}
         >

@@ -232,7 +232,7 @@ export const Button = forwardRef(function Button(
   }: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>
 ) {
-  let classes = clsx(
+  const classes = clsx(
     className,
     styles.base,
     sizeClasses[size],
