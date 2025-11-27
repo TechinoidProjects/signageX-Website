@@ -114,7 +114,7 @@ export default function SearchAndFilter({ blogs }: { blogs: Blog[] }) {
         }
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-14">
         {paginatedBlogs.map((blog) => (
-          <BlogCard key={blog.id} readMoreHref={`/blog/${blog.id}`}  direction="vertical" color = "invert" {...blog} />
+          <BlogCard key={blog.id} readMoreHref={`/blogs/${blog.id}`}  direction="vertical" color = "invert" {...blog} />
         ))}
       </div>
 
