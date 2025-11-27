@@ -68,10 +68,14 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold text-base mb-4">Product</h4>
                 <ul className="space-y-3">
-                  {['Solutions', 'Download', 'Pricing'].map((item) => (
-                    <li key={item}>
-                      <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-                        {item}
+                  {[
+                    { label: 'Solutions', href: '/solutions' },
+                    { label: 'Download', href: '/download' },
+                    { label: 'Pricing', href: '/pricing' },
+                  ].map(({ label, href }) => (
+                    <li key={label}>
+                      <Link href={href} className="text-sm text-gray-300 hover:text-white transition-colors">
+                        {label}
                       </Link>
                     </li>
                   ))}
@@ -82,10 +86,16 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold text-base mb-4">Resources</h4>
                 <ul className="space-y-3">
-                  {['Industries', 'How it works', 'Blogs', 'Resources', 'Help center'].map((item) => (
-                    <li key={item}>
-                      <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-                        {item}
+                  {[
+                    { label: 'Industries', href: '/industries' },
+                    { label: 'How it works', href: '/how-it-works' },
+                    { label: 'Blogs', href: '/blogs' },
+                    { label: 'Resources', href: '/resources' },
+                    { label: 'Help center', href: '/help-center' },
+                  ].map(({ label, href }) => (
+                    <li key={label}>
+                      <Link href={href} className="text-sm text-gray-300 hover:text-white transition-colors">
+                        {label}
                       </Link>
                     </li>
                   ))}
@@ -96,10 +106,10 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold text-base mb-4">Company</h4>
                 <ul className="space-y-3">
-                  {['About Us', 'Reviews'].map((item) => (
-                    <li key={item}>
-                      <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-                        {item}
+                  {[{ label: 'About Us', href: '/about-us' },{ label: 'Reviews', href: '/reviews' }].map(({ label, href }) => (
+                    <li key={label}>
+                      <Link href={href} className="text-sm text-gray-300 hover:text-white transition-colors">
+                        {label}
                       </Link>
                     </li>
                   ))}
@@ -108,10 +118,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* ✅ Mobile layout */}
           <div className="flex flex-col md:hidden gap-8 pb-6 border-b border-white/10">
             {/* Logo and text */}
-            <div className="text-center space-y-4">
+            <div className="text-center flex flex-col gap-4">
               <Link href="/">
                 <Image src="/logo-light.svg" alt="Logo" width={90} height={30} priority className="mx-auto" />
               </Link>
@@ -120,32 +129,50 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Quick links stacked */}
-            <div className="grid grid-cols-2 gap-6 text-center">
-              <div>
-                <h4 className="font-semibold text-base mb-3">Product</h4>
+            {/* Quick links in columns */}
+            <div className="grid grid-cols-3 gap-4">
+              <div className="text-center">
+                <h4 className="font-semibold text-sm mb-3">Product</h4>
                 <ul className="space-y-2">
-                  <li><Link href="#" className="text-sm text-gray-300 hover:text-white">Solutions</Link></li>
-                  <li><Link href="#" className="text-sm text-gray-300 hover:text-white">Download</Link></li>
-                  <li><Link href="#" className="text-sm text-gray-300 hover:text-white">Pricing</Link></li>
+                  <li><Link href="/industries" className="text-xs text-gray-300 hover:text-white">Solutions</Link></li>
+                  <li><Link href="/download" className="text-xs text-gray-300 hover:text-white">Download</Link></li>
+                  <li><Link href="/#pricing" className="text-xs text-gray-300 hover:text-white">Pricing</Link></li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="font-semibold text-base mb-3">Company</h4>
+              <div className="text-center">
+                <h4 className="font-semibold text-sm mb-3">Resources</h4>
                 <ul className="space-y-2">
-                  <li><Link href="#" className="text-sm text-gray-300 hover:text-white">About Us</Link></li>
-                  <li><Link href="#" className="text-sm text-gray-300 hover:text-white">Reviews</Link></li>
+                  <li><Link href="/industries" className="text-xs text-gray-300 hover:text-white">Industries</Link></li>
+                  <li><Link href="/how-it-works" className="text-xs text-gray-300 hover:text-white">How it works</Link></li>
+                  <li><Link href="/blogs" className="text-xs text-gray-300 hover:text-white">Blogs</Link></li>
+                  <li><Link href="/resources" className="text-xs text-gray-300 hover:text-white">Resources</Link></li>
+                  <li><Link href="/help-center" className="text-xs text-gray-300 hover:text-white">Help center</Link></li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <h4 className="font-semibold text-sm mb-3">Company</h4>
+                <ul className="space-y-2">
+                  <li><Link href="/about-us" className="text-xs text-gray-300 hover:text-white">About Us</Link></li>
+                  <li><Link href="/reviews" className="text-xs text-gray-300 hover:text-white">Reviews</Link></li>
                 </ul>
               </div>
             </div>
 
             {/* Social icons */}
             <div className="flex justify-center gap-4">
-              {[Instagram, Linkedin, Youtube, Facebook].map((Icon, i) => (
+              {[
+                { icon: Instagram, href: 'https://instagram.com' },
+                { icon: Linkedin, href: 'https://linkedin.com' },
+                { icon: Youtube, href: 'https://youtube.com' },
+                { icon: Facebook, href: 'https://facebook.com' },
+              ].map(({ icon: Icon, href }, i) => (
                 <Link
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center"
                 >
                   <Icon className="w-5 h-5" />
@@ -154,13 +181,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Bottom section */}
           <div className="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">All rights reserved</p>
             <div className="flex gap-6">
-              {['Terms', 'Privacy', 'Cookies'].map((link) => (
-                <Link key={link} href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  {link}
+              {[
+                { label: 'Terms', href: '/terms' },
+                { label: 'Privacy', href: '/privacy' },
+                { label: 'Cookies', href: '/cookies' },
+              ].map(({ label, href }) => (
+                <Link key={label} href={href} className="text-sm text-gray-400 hover:text-white transition-colors">
+                  {label}
                 </Link>
               ))}
             </div>
