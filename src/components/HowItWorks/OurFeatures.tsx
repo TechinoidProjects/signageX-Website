@@ -38,7 +38,7 @@ export default function OurFeatures() {
   return (
     <section className="bg-background-light w-full flex justify-center items-center py-16 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4 ">
-        <div className="flex flex-col justify-between items-center pb-16 gap-6">
+        <div className="flex flex-col justify-between items-center pb-16 gap-2">
           <Badge
             text="Seamless Sync"
             icon={Dices}
