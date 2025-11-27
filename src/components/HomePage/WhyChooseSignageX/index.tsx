@@ -37,7 +37,6 @@ export default function WhyChooseSignageX() {
             subtext="Harness the power of AI digital signage to create dynamic layouts, smart widgets, and personalized content with just one message."
             imageSrc="/images/SignageX-feature.png"
             showImage={false}
-            ImgclassName="flex!"
           />
 
           <SignageCard

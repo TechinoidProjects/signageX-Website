@@ -35,13 +35,12 @@ export const StepCard: React.FC<StepCardProps> = ({
         {stepNumber}
       </span>
 
-      <div className="relative w-[70%]">
+      <div className="relative h-[50%] md:h-full w-[70%]">
         <SignageCard
           heading={heading}
           subtext={subtext}
           imageSrc={imageSrc}
           showImage={showImage}
-          ImgclassName="hidden md:flex!"
         />
       </div>
     </div>
