@@ -25,61 +25,61 @@ export default function Industries() {
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 top-1/2 relative">
           <IndustryCard
-            imageSrc="/images/FeaturedImage1.jpg"
+            imageSrc="/images/featuredImage1.jpg"
             title="Retail"
             href="/retail"
           />
 
           <IndustryCard
-            imageSrc="/images/FeaturedImage5.jpg"
+            imageSrc="/images/featuredImage5.jpg"
             title="Corporate"
             href="/corporate"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage2.jpg"
+            imageSrc="/images/featuredImage2.jpg"
             title="Healthcare"
             href="/healthcare"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage3.jpg"
+            imageSrc="/images/featuredImage3.jpg"
             title="Education"
             href="/education"
           />
 
           <IndustryCard
-            imageSrc="/images/FeaturedImage2.jpg"
+            imageSrc="/images/featuredImage2.jpg"
             title="Restaurants"
             href="/restaurants"
           />
 
           <IndustryCard
-            imageSrc="/images/FeaturedImage4.jpg"
+            imageSrc="/images/featuredImage4.jpg"
             title="Hospitality"
             href="/hospitality"
           />
 
           <IndustryCard
-            imageSrc="/images/FeaturedImage3.jpg"
+            imageSrc="/images/featuredImage3.jpg"
             title="Government"
             href="/government"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage1.jpg"
+            imageSrc="/images/featuredImage1.jpg"
             title="Transport"
             href="/transportation"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage5.jpg"
+            imageSrc="/images/featuredImage5.jpg"
             title="Fitness"
             href="/fitness"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage1.jpg"
+            imageSrc="/images/featuredImage1.jpg"
             title="Entertainment"
             href="/entertainment"
           />
           <IndustryCard
-            imageSrc="/images/FeaturedImage2.jpg"
+            imageSrc="/images/featuredImage2.jpg"
             title="Financial Institutions"
             href="/financial-institutions"
           />
