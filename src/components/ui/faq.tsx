@@ -47,7 +47,7 @@ export const FAQs = ({ faqs }: FAQsProps) => {
                         color="neutral"
                         showIcon={false}
                         size="sm"
-                        className="hidden! md:block"
+                        className="hidden! md:inline-flex!"
                       />
                     </div>
                   )}
@@ -66,7 +66,7 @@ export const FAQs = ({ faqs }: FAQsProps) => {
                             color="deepPurple"
                             showIcon={false}
                             size="sm"
-                            className="hidden! md:block"
+                            className="hidden! md:inline-flex!"
 
                           />
                         </div>
