@@ -83,7 +83,9 @@ module.exports = {
         },
         gradient: {
           primary: 'var(--gradient-primary)',
-          dark: 'var(--dark-gradient)'
+          dark: 'var(--dark-gradient)',
+          deep: 'var(--gradient-deep-purple)', 
+
         },
         background: 'var(--background)',
         foreground: 'var(--foreground)',

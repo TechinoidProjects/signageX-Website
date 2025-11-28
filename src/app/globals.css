@@ -120,6 +120,8 @@
   /* Gradient */
   --gradient-primary: linear-gradient(92deg, #0F0031 -5.73%, #413263 120.63%);
   --dark-gradient: linear-gradient(92deg, #0F0031 -5.73%, #413263 120.63%);
+  --gradient-deep-purple: linear-gradient(180deg, #574384 -0.05%, #0F0031 99.92%);
+
   --gradient-large-circle: linear-gradient(132deg, #2B1E4A -18.69%, #3E305E 89.53%);
   --gradient-middle-circle: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.10) 100%);
 
@@ -156,6 +158,10 @@
 /* Dark gradient utility to match usage in components */
 .bg-dark-gradient {
   background-image: var(--dark-gradient);
+}
+
+.bg-gradient-deep {
+  background-image: var(--gradient-deep-purple);
 }
 
 @keyframes slide {

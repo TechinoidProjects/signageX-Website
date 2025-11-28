@@ -5,33 +5,39 @@ import Link from "next/link";
 import React from "react";
 
 interface DownloadCardProps {
-  href: string;
+  href?: string;
   logo: string;
   title: string;
   version: string;
+  color?: "normal" | "invert";
 }
 
 export const DownloadCard: React.FC<DownloadCardProps> = ({
-  href,
+  href = "/",
   logo,
   title,
   version,
+  color = "normal",
 }) => {
+  const bgColor = color === "invert" ? "bg-white" : "bg-purple-25";
+  const hoverBgColor = color === "invert" ? "hover:bg-purple-25" : "hover:bg-neutral-100/40";
+
   return (
     <Link href={href}>
       <div
-        className="
+        className={`
           w-full 
-          bg-purple-25 
+          ${bgColor}
           rounded-2xl 
           p-6 
           flex flex-col items-center justify-center 
           text-center 
           transition-all 
           hover:shadow-md 
-          hover:bg-neutral-100
+          ${hoverBgColor}
           cursor-pointer
-        "
+          font-display
+        `}
       >
         {/* Logo */}
         <div className="w-12 h-12 relative mb-3">
