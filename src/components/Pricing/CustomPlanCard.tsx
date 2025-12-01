@@ -66,7 +66,7 @@ const CustomPlanCard: FC<CustomPlanProps> = ({
           </p>
 
           <Button
-              color="light"
+              color="white"
               size="lg"
               className="mt-10 w-1/4"
               href={href}
