@@ -40,7 +40,7 @@ export const PlanComparisonTable: React.FC<PlanComparisonTableProps> = ({
   categories,
 }) => {
   return (
-    <section className="w-full flex justify-center py-16 px-4 md:px-0">
+    <section className="w-full flex justify-center py-16 px-4 md:px-6 xl:px-0">
       <div className="container mx-auto flex flex-col gap-6">
         
         <div className="flex flex-col justify-between items-center text-center pb-6">

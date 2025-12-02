@@ -33,12 +33,12 @@ const CustomPlanCard: FC<CustomPlanProps> = ({
   return (
     <div
       className={cn(
-        "w-full mx-auto bg-deep-purple-500 rounded-2xl text-white h-full relative overflow-hidden",
+        "w-full mx-auto bg-deep-purple-500 rounded-2xl text-white h-full relative overflow-hidden mb-6 md:mb-0",
         className
       )}
     >
       {shouldShowImage && (
-        <div className="masked-image absolute right-0 top-0 w-180 h-full ">
+        <div className="masked-image absolute right-0 top-0 w-180 h-full hidden lg:block">
           <Image
             src="/images/masked-image.png"
             alt={imageAlt}
@@ -76,7 +76,7 @@ const CustomPlanCard: FC<CustomPlanProps> = ({
         </div>
 
         {shouldShowImage && (
-          <div className="w-1/2 p-0 flex justify-center items-center">
+          <div className="w-1/2 p-0 hidden md:flex justify-center items-center">
             <Image
               src={imageSrc}
               alt={imageAlt}
