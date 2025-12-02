@@ -1,6 +1,7 @@
 
 import SignagePricing from "@/components/HomePage/SignagePricing";
 import SignageXPlans from "@/components/Pricing/SignageXPlans";
+import PricingTable from "@/components/Pricing/PricingTable";
 import CTA from "@/components/common/CTA";
 export default function HowItWorks() {
   return (
@@ -11,6 +12,7 @@ export default function HowItWorks() {
             subheading="Choose a flexible pricing plan that fits your business. Scale effortlessly as you grow with AI-powered digital signage tools."
         />
         <SignageXPlans />
+        <PricingTable />
       
       <CTA />
       

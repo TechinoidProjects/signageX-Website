@@ -6,8 +6,6 @@ import { Dices, Dice6, Dice2 } from "lucide-react";
 import CustomPlanCard from "./CustomPlanCard";
 
 export default function SignageXPlans() {
-  
-
   return (
     <section className="bg-back-primary w-full flex justify-center items-center py-8 md:py-16 px-4">
       <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
