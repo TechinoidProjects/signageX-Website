@@ -1,4 +1,3 @@
-import CTA from "@/components/common/CTA";
 import { PlanComparisonTable } from "./PlanComparisonTable";
 import {ImagePlus , Video, Wallpaper, Mic, FileText, Monitor, Files} from "lucide-react";
 
@@ -301,7 +300,6 @@ export default function PricingPage() {
         plans={PLANS}
         categories={CATEGORIES}
       />
-      <CTA />
     </main>
   );
 }

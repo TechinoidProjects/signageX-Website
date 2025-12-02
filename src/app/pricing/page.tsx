@@ -2,6 +2,7 @@
 import SignagePricing from "@/components/HomePage/SignagePricing";
 import SignageXPlans from "@/components/Pricing/SignageXPlans";
 import PricingTable from "@/components/Pricing/PricingTable";
+import AllFAQs from "@/components/Pricing/AllFAQs";
 import CTA from "@/components/common/CTA";
 export default function HowItWorks() {
   return (
@@ -13,9 +14,8 @@ export default function HowItWorks() {
         />
         <SignageXPlans />
         <PricingTable />
-      
-      <CTA />
-      
+        <AllFAQs/>      
+        <CTA />
     </main>
   );
 }
