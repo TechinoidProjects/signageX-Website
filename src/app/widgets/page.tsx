@@ -1,6 +1,7 @@
 
 import Hero from "@/components/common/Hero";
 import FeaturedWidget from "@/components/Widgets/FeaturedWidget";
+import AllWidgets from "@/components/Widgets/AllWidgets";
 import CTA from "@/components/common/CTA";
 export default function HowItWorks() {
   return (
@@ -15,6 +16,7 @@ export default function HowItWorks() {
             buttonShown = {true}
         />
         <FeaturedWidget />
+        <AllWidgets />
       <CTA />
       
     </main>

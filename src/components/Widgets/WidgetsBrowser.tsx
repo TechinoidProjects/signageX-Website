@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import WidgetCard, { WidgetItem } from "@/components/ui/cards/WidgetCard";
 import WidgetsFilters from "./WidgetFilters";
 import Pagination from "@/components/Blog/Pagination";
