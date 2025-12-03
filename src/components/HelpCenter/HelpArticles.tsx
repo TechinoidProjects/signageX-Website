@@ -23,70 +23,70 @@ export default function Hero() {
         <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 w-full ">
           <DownloadCard
             href="#"
-            logo="/svg/vector-9.svg"
+            logo="/svg/Vector-9.svg"
             title="Getting Started"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-8.svg"
+            logo="/svg/Vector-8.svg"
             title="Screen Setup"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-7.svg"
+            logo="/svg/Vector-7.svg"
             title="Account Setup"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-5.svg"
+            logo="/svg/Vector-5.svg"
             title="Content Upload"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-4.svg"
+            logo="/svg/Vector-4.svg"
             title="AI Tools"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-3.svg"
+            logo="/svg/Vector-3.svg"
             title="Dashboard Guide"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-6.svg"
+            logo="/svg/Vector-6.svg"
             title="Integrations"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-2.svg"
+            logo="/svg/Vector-2.svg"
             title="Billing & Plans"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector-1.svg"
+            logo="/svg/Vector-1.svg"
             title="Troubleshooting"
             version="2 Articles"
             color="invert"
           />
           <DownloadCard
             href="#"
-            logo="/svg/vector.svg"
+            logo="/svg/Vector.svg"
             title="Security"
             version="2 Articles"
             color="invert"

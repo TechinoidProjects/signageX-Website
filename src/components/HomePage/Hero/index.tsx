@@ -16,11 +16,11 @@ export default function HeroSection() {
             title="Digital Signage Experience, Paired With AI"
             subtitle="Create, manage, and optimize digital signage faster with AI-driven tools, for seamless, dynamic experiences on any screen."
             />
-            <div className="flex flex-col md:flex-row items-center mt-4 w-full max-w-md md:gap-1 gap-4">
+            <div className="flex flex-col md:flex-row items-center mt-4 w-full max-w-md md:gap-1 gap-4 z-10">
                 <ActionButton
                     variant="primary"
                     size="lg"
-                    onClick={() => console.log("Button clicked!")}
+                    href="/trial"
                     >
                     Start Free Trial
                 </ActionButton>
