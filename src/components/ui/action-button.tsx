@@ -42,7 +42,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({
       "border border-gray-400 text-gray-800 hover:bg-gray-100 dark:text-white dark:border-gray-700",
     ghost:
       "text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800",
-    gradientGhost: "text-deep-purple-500 hover:bg-gray-100 ",
+    gradientGhost: "text-deep-purple-500 hover:scale-105 ",
   };
 
   const sizes: Record<ActionButtonSize, string> = {
