@@ -26,7 +26,7 @@ export default function WidgetsBrowser({
   const tags = Array.from(new Set(allItems.map((i) => i.tag)));
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-4 space-y-6 mt-15">
+    <div className="w-full space-y-6 mt-15">
 
       {/* Filters */}
       <WidgetsFilters
@@ -36,7 +36,7 @@ export default function WidgetsBrowser({
       />
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:gap-8 gap-4 px-4 xl:px-0">
         {items.map((item) => (
           <WidgetCard key={item.id} item={item} />
         ))}

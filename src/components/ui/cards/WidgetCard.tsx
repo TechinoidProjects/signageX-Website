@@ -13,7 +13,7 @@ interface WidgetCardProps {
 
 export default function WidgetCard({ item }: WidgetCardProps) {
   return (
-    <div className="rounded-3xl h-80 overflow-hidden border border-neutral-100/50 box-shadow-card flex flex-col">
+    <div className="rounded-3xl h-100 overflow-hidden border border-neutral-100/50 box-shadow-card flex flex-col">
       <div className="flex items-center justify-between gap-2 px-3 py-4 bg-white shrink-0">
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-red-500/50"></span>

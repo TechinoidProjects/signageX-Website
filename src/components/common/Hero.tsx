@@ -28,8 +28,8 @@ export default function Hero({
   buttonShown = true,
 }: HeroProps) {
   return (
-    <section className="bg-white w-full h-full py-16 md:py-6">
-      <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
+    <section className="bg-white w-full flex items-center justify-center py-16 md:py-6">
+      <div className="container mx-auto flex flex-col justify-center items-center xl:gap-4">
         
         <div className="flex flex-col justify-between items-center pb-8 gap-6 text-center">
           <Badge text={badgeText} icon={Dices} variant="outline" color="custom" />
@@ -38,10 +38,10 @@ export default function Hero({
             <Button size="lg" color="purple">{buttonText}</Button>
           }
         </div>
-        <div className="flex flex-col md:flex-row justify-between gap-8 w-full">
+        <div className="container flex flex-col md:flex-row justify-between gap-4 xl:gap-8 w-full px-4 xl:px-0">
           <Image
             src={imageOneSrc}
-            className="w-full h-60 object-cover rounded-xl"
+            className="w-full md:w-1/2 h-60 object-cover rounded-xl"
             alt="Hero Imge One"
             width={500}
             height={500}
@@ -49,7 +49,7 @@ export default function Hero({
 
           <Image
             src={imageTwoSrc}
-            className="w-full h-60 object-cover rounded-xl"
+            className="w-full md:w-1/2 h-60 object-cover rounded-xl"
             alt="Hero Imge Two"
             width={500}
             height={500}

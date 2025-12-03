@@ -108,7 +108,7 @@ export default function AllWidgets() {
   };
 
   return (
-    <section className="bg-white w-full flex justify-center items-center py-8 md:py-16 px-4">
+    <section className="bg-white w-full flex justify-center items-center py-8 md:py-16">
       <div className=" container mx-auto flex flex-col justify-center items-center  ">
         <div className="flex flex-col justify-between items-center pb-8 gap-2">
             <Badge
