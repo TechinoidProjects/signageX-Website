@@ -1,5 +1,6 @@
 
 import Hero from "@/components/common/Hero";
+import FeaturedWidget from "@/components/Widgets/FeaturedWidget";
 import CTA from "@/components/common/CTA";
 export default function HowItWorks() {
   return (
@@ -13,6 +14,7 @@ export default function HowItWorks() {
             imageTwoSrc = "/images/Widget-hero-image-two.png"
             buttonShown = {true}
         />
+        <FeaturedWidget />
       <CTA />
       
     </main>
