@@ -5,21 +5,32 @@ import { Button } from "@/components/ui/button";
 import PricingCard from "@/components/ui/cards/PricingCard";
 import LicenseSelector from "./LicenseSelector";
 
-export default function GetStarted() {
+type SignagePricingProps = {
+  badgeText: string;
+  heading: string;
+  subheading: string;
+};
+
+export default function SignagePricing({
+  badgeText = "Pricing",
+  heading = "Best Pricing for Your Business",
+  subheading = "Choose the AI-powered digital signage plan that fits your needs, no hidden fees. Just powerful features to help you scale effortlessly.",
+}: SignagePricingProps) {
   return (
     <section className="w-full flex justify-center items-center py-8 md:py-16 px-4 bg-white">
       <div className="container mx-auto flex flex-col justify-center items-center md:gap-4">
+        
         {/* Badge + Heading */}
         <div className="flex flex-col justify-between items-center pb-8 md:pb-16 gap-2 md:gap-6 text-center">
           <Badge
-            text="Pricing"
+            text={badgeText}
             icon={Dices}
             variant="solid"
             color="custom"
           />
           <Heading
-            title="Best Pricing for Your Business"
-            subtitle="Choose the AI-powered digital signage plan that fits your needs, no hidden fees. Just powerful features to help you scale effortlessly."
+            title={heading}
+            subtitle={subheading}
           />
         </div>
 

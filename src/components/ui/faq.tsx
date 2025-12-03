@@ -38,7 +38,7 @@ export const FAQs = ({ faqs }: FAQsProps) => {
                 <div className="flex flex-col">
                   {!isActive && (
                     <div className="flex w-full items-center gap-4">
-                      <span className="text-md text-left md:text-xl font-semibold text-neutral-800">
+                      <span className="text-md text-left md:text-xl font-semibold text-neutral-800 font-display">
                         {item.heading}
                       </span>
                       <Badge
@@ -56,7 +56,7 @@ export const FAQs = ({ faqs }: FAQsProps) => {
                     <div className="px-4 py-2">
                       <div className="flex flex-col">
                         <div className="flex items-center gap-3">
-                          <h3 className="text-md text-left md:text-xl font-semibold text-neutral-800">
+                          <h3 className="text-md text-left md:text-xl font-semibold text-neutral-800 font-display">
                             {item.heading}
                           </h3>
 
