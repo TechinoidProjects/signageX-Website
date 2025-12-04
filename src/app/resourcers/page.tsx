@@ -1,6 +1,7 @@
 
 import Hero from "@/components/common/Hero";
 import HelpHero from "@/components/HelpCenter/Hero";
+import HelpArticles from "@/components/HelpCenter/HelpArticles";
 import CTA from "@/components/common/CTA";
 export default function Resources() {
   return (
@@ -14,8 +15,8 @@ export default function Resources() {
           imageTwoSrc = "/images/resources-hero-imge-two.png"
           buttonShown = {false}
       />
-
       <HelpHero badgeText="community" />
+      <HelpArticles />
 
         
       <CTA />
