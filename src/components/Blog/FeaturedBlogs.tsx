@@ -34,7 +34,7 @@ export default function FeaturedBlogs() {
           readTime="8"
 
         />
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:py-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:py-10">
           <BlogCard
                 image="/images/blog-card-image-two.png"
                 category="Restaurants"
