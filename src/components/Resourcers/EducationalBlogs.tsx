@@ -152,7 +152,7 @@ export default function EducationalBlogs() {
           />
         </div>
 
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-4">
           {currentBlogs.map((blog) => (
             <BlogCard
               key={blog.id}
