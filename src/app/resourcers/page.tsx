@@ -3,6 +3,9 @@ import Hero from "@/components/common/Hero";
 import HelpHero from "@/components/HelpCenter/Hero";
 import HelpArticles from "@/components/HelpCenter/HelpArticles";
 import EducationalBlogs from "@/components/Resourcers/EducationalBlogs";
+import GetStarted from "@/components/HomePage/GetStarted";
+import AllFAQs from "@/components/HelpCenter/AllFAQs";
+
 import CTA from "@/components/common/CTA";
 export default function Resources() {
   return (
@@ -19,10 +22,9 @@ export default function Resources() {
       <HelpHero badgeText="community" />
       <HelpArticles />
       <EducationalBlogs/>
-
-        
+      <GetStarted />
+      <AllFAQs />
       <CTA />
-      
     </main>
   );
 }
