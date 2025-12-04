@@ -47,7 +47,7 @@ export default function BlogCard(props: BlogCardProps) {
           isHorizontal ? "md:w-1/2 w-full h-64 md:h-100" : "w-full h-70"
         }`}
       >
-        <Image src={image} alt={title} fill className="object-cover rounded-3xl p-3" />
+        <Image src={image} alt={title} fill className={`object-cover rounded-3xl ${isHorizontal ? "p-3 pr-0" : "p-3 pb-0"}`} />
       </div>
 
       {/* CONTENT */}
