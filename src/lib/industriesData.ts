@@ -5,6 +5,12 @@ export type IndustryPromoSection = {
   reverse?: boolean;
 };
 
+export type Card = {
+  id: number;
+  image: string;
+  title: string;
+};
+
 export type Industry = {
   slug: string;
   title: string;
@@ -14,6 +20,7 @@ export type Industry = {
   reverse?: boolean;
   promoSections?: IndustryPromoSection[];
   tabs?: Tab[];
+  cards?: Card[];
 };
 
 export type Tab = {
@@ -85,6 +92,13 @@ export const industries: Industry[] = [
         subheading: "Integrate with POS, inventory, and CRM systems for dynamic content"
       }
     ],
+    cards: [
+      { id: 1, image: "/images/featuredImage1.jpg", title: "October Event" },
+      { id: 2, image: "/images/featuredImage2.jpg", title: "Quiz Time" },
+      { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
+      { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
+      { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
+    ],
   },
   {
     slug: "corporate",
@@ -109,6 +123,50 @@ export const industries: Industry[] = [
         reverse: true,
       },
     ],
+    tabs: [
+      {
+        id: "layout",
+        title: "AI Layout Generation",
+        image: "/images/featuredImage2.jpg",
+        heading: "Create Designs with a Single Prompt",
+        subheading: "Describe your idea and our AI will generate stunning retail displays in seconds"
+      },
+      {
+        id: "analytics",
+        title: "Real-time Analytics",
+        image: "/images/FeaturedImage1.jpg",
+        heading: "Data-Driven Performance Insights",
+        subheading: "Track engagement and optimize your content with live metrics"
+      },
+      {
+        id: "scheduling",
+        title: "Smart Scheduling",
+        image: "/images/FeaturedImage3.jpg",
+        heading: "Automated Content Rotation",
+        subheading: "Schedule promotions and content based on time, day, or inventory levels"
+      },
+      {
+        id: "templates",
+        title: "Pre-built Templates",
+        image: "/images/FeaturedImage4.jpg",
+        heading: "Professional Designs in Minutes",
+        subheading: "Choose from hundreds of customizable templates for any retail need"
+      },
+      {
+        id: "integration",
+        title: "Seamless Integration",
+        image: "/images/FeaturedImage5.jpg",
+        heading: "Connect Your Existing Tools",
+        subheading: "Integrate with POS, inventory, and CRM systems for dynamic content"
+      }
+    ],
+    cards: [
+      { id: 1, image: "/images/featuredImage1.jpg", title: "October Event" },
+      { id: 2, image: "/images/featuredImage2.jpg", title: "Quiz Time" },
+      { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
+      { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
+      { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
+    ],
   },
   {
     slug: "healthcare",
@@ -131,6 +189,50 @@ export const industries: Industry[] = [
           "Use clear, visual wayfinding signage to direct patients and visitors to the right department without confusion.",
         reverse: true,
       },
+    ],
+    tabs: [
+      {
+        id: "layout",
+        title: "AI Layout Generation",
+        image: "/images/featuredImage2.jpg",
+        heading: "Create Designs with a Single Prompt",
+        subheading: "Describe your idea and our AI will generate stunning retail displays in seconds"
+      },
+      {
+        id: "analytics",
+        title: "Real-time Analytics",
+        image: "/images/FeaturedImage1.jpg",
+        heading: "Data-Driven Performance Insights",
+        subheading: "Track engagement and optimize your content with live metrics"
+      },
+      {
+        id: "scheduling",
+        title: "Smart Scheduling",
+        image: "/images/FeaturedImage3.jpg",
+        heading: "Automated Content Rotation",
+        subheading: "Schedule promotions and content based on time, day, or inventory levels"
+      },
+      {
+        id: "templates",
+        title: "Pre-built Templates",
+        image: "/images/FeaturedImage4.jpg",
+        heading: "Professional Designs in Minutes",
+        subheading: "Choose from hundreds of customizable templates for any retail need"
+      },
+      {
+        id: "integration",
+        title: "Seamless Integration",
+        image: "/images/FeaturedImage5.jpg",
+        heading: "Connect Your Existing Tools",
+        subheading: "Integrate with POS, inventory, and CRM systems for dynamic content"
+      }
+    ],
+    cards: [
+      { id: 1, image: "/images/featuredImage1.jpg", title: "October Event" },
+      { id: 2, image: "/images/featuredImage2.jpg", title: "Quiz Time" },
+      { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
+      { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
+      { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
     ],
   },
   {
@@ -155,6 +257,50 @@ export const industries: Industry[] = [
           "Promote workshops, clubs, and campus events with attention-grabbing visuals that update in real time.",
         reverse: true,
       },
+    ],
+    tabs: [
+      {
+        id: "layout",
+        title: "AI Layout Generation",
+        image: "/images/featuredImage2.jpg",
+        heading: "Create Designs with a Single Prompt",
+        subheading: "Describe your idea and our AI will generate stunning retail displays in seconds"
+      },
+      {
+        id: "analytics",
+        title: "Real-time Analytics",
+        image: "/images/FeaturedImage1.jpg",
+        heading: "Data-Driven Performance Insights",
+        subheading: "Track engagement and optimize your content with live metrics"
+      },
+      {
+        id: "scheduling",
+        title: "Smart Scheduling",
+        image: "/images/FeaturedImage3.jpg",
+        heading: "Automated Content Rotation",
+        subheading: "Schedule promotions and content based on time, day, or inventory levels"
+      },
+      {
+        id: "templates",
+        title: "Pre-built Templates",
+        image: "/images/FeaturedImage4.jpg",
+        heading: "Professional Designs in Minutes",
+        subheading: "Choose from hundreds of customizable templates for any retail need"
+      },
+      {
+        id: "integration",
+        title: "Seamless Integration",
+        image: "/images/FeaturedImage5.jpg",
+        heading: "Connect Your Existing Tools",
+        subheading: "Integrate with POS, inventory, and CRM systems for dynamic content"
+      }
+    ],
+    cards: [
+      { id: 1, image: "/images/featuredImage1.jpg", title: "October Event" },
+      { id: 2, image: "/images/featuredImage2.jpg", title: "Quiz Time" },
+      { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
+      { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
+      { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
     ],
   },
   {
