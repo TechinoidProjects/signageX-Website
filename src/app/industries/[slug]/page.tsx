@@ -3,6 +3,7 @@ import PromoSectionBlock from "@/components/Industries/IndustryPromoBlock";
 import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import FeaturedApps from "@/components/Industries/FeaturedApps";
 import { WhyChooseTabsSection } from "@/components/Industries/WhyChooseTabs";
+import GetStarted from "@/components/HomePage/GetStarted";
 import CTA from "@/components/common/CTA";
 import { Dices } from "lucide-react";
 import { industries } from "@/lib/industriesData";
@@ -69,6 +70,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           subheading="Experience AI-powered digital signage for every business."
           features={industry.features || []}
         />
+        <GetStarted />
       <CTA />
     </main>
   );
