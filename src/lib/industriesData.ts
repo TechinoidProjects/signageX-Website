@@ -21,6 +21,16 @@ export type Industry = {
   promoSections?: IndustryPromoSection[];
   tabs?: Tab[];
   cards?: Card[];
+  features?: WhyChooseFeature[];
+};
+
+export type WhyChooseFeature = {
+  id: string;
+  title: string;
+  tag: string;
+  image: string;
+  heading: string;
+  subheading: string;
 };
 
 export type Tab = {
@@ -99,6 +109,44 @@ export const industries: Industry[] = [
       { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
       { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
     ],
+    features: [
+      {
+        id: "smart",
+        title: "Grow Without Limits",
+        tag: "Scalability",
+        image: "/images/about-image-one.png",
+        heading: "Grow Without Limits",
+        subheading:
+          "SignageX adapts seamlessly from single stores to nationwide retail chains, ensuring consistent branding and communication everywhere.",
+      },
+      {
+        id: "hardware",
+        title: "Use Existing Hardware",
+        tag: "COST-EFFICIENT",
+        image: "/images/featuredImage1.jpg",
+        heading: "Use Existing Hardware",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hub",
+        title: "Centralized Management Hub",
+        tag: "CONTROL",
+        image: "/images/featuredImage2.jpg",
+        heading: "Centralized Management Hub",
+        subheading:
+          "Organize, assign, and update screens from one unified dashboard with full automation.",
+      },
+      {
+        id: "support",
+        title: "Reliable 24/7 Support",
+        tag: "TRUST",
+        image: "/images/featuredImage3.jpg",
+        heading: "Reliable Support",
+        subheading:
+          "Our support ensures smooth operations, uptime, and long-term stability for all deployments.",
+      },
+    ],
   },
   {
     slug: "corporate",
@@ -167,6 +215,44 @@ export const industries: Industry[] = [
       { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
       { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
     ],
+    features: [
+      {
+        id: "smart",
+        title: "Smarter AI Tools",
+        tag: "Innovation",
+        image: "/images/about-image-one.png",
+        heading: "Smarter AI Tools",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hardware",
+        title: "Use Existing Hardware",
+        tag: "COST-EFFICIENT",
+        image: "/images/featuredImage1.jpg",
+        heading: "Use Existing Hardware",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hub",
+        title: "Centralized Management Hub",
+        tag: "CONTROL",
+        image: "/images/featuredImage2.jpg",
+        heading: "Centralized Management Hub",
+        subheading:
+          "Organize, assign, and update screens from one unified dashboard with full automation.",
+      },
+      {
+        id: "support",
+        title: "Reliable 24/7 Support",
+        tag: "TRUST",
+        image: "/images/featuredImage3.jpg",
+        heading: "Reliable Support",
+        subheading:
+          "Our support ensures smooth operations, uptime, and long-term stability for all deployments.",
+      },
+    ],
   },
   {
     slug: "healthcare",
@@ -233,6 +319,44 @@ export const industries: Industry[] = [
       { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
       { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
       { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
+    ],
+    features: [
+      {
+        id: "smart",
+        title: "Smarter AI Tools",
+        tag: "Innovation",
+        image: "/images/about-image-one.png",
+        heading: "Smarter AI Tools",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hardware",
+        title: "Use Existing Hardware",
+        tag: "COST-EFFICIENT",
+        image: "/images/featuredImage1.jpg",
+        heading: "Use Existing Hardware",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hub",
+        title: "Centralized Management Hub",
+        tag: "CONTROL",
+        image: "/images/featuredImage2.jpg",
+        heading: "Centralized Management Hub",
+        subheading:
+          "Organize, assign, and update screens from one unified dashboard with full automation.",
+      },
+      {
+        id: "support",
+        title: "Reliable 24/7 Support",
+        tag: "TRUST",
+        image: "/images/featuredImage3.jpg",
+        heading: "Reliable Support",
+        subheading:
+          "Our support ensures smooth operations, uptime, and long-term stability for all deployments.",
+      },
     ],
   },
   {

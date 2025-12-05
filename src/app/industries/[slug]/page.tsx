@@ -2,6 +2,7 @@ import Hero from "@/components/common/Hero";
 import PromoSectionBlock from "@/components/Industries/IndustryPromoBlock";
 import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import FeaturedApps from "@/components/Industries/FeaturedApps";
+import { WhyChooseTabsSection } from "@/components/Industries/WhyChooseTabs";
 import CTA from "@/components/common/CTA";
 import { Dices } from "lucide-react";
 import { industries } from "@/lib/industriesData";
@@ -62,7 +63,12 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           buttonText="Explore All Retail Widgets"
           buttonHref="/widgets/retail"
         />
-
+        <WhyChooseTabsSection
+          badgeText="why us"
+          heading={`Why Choose SignageX For ${industry.title}`}
+          subheading="Experience AI-powered digital signage for every business."
+          features={industry.features || []}
+        />
       <CTA />
     </main>
   );
