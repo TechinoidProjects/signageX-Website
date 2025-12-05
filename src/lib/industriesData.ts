@@ -13,7 +13,17 @@ export type Industry = {
   imageSrc: string;
   reverse?: boolean;
   promoSections?: IndustryPromoSection[];
+  tabs?: Tab[];
 };
+
+export type Tab = {
+  id: string;
+  title: string;
+  image: string;
+  heading: string;
+  subheading: string;
+};
+
 
 export const industries: Industry[] = [
   {
@@ -37,6 +47,43 @@ export const industries: Industry[] = [
           "Use AI-powered layouts to automatically promote bestsellers, new arrivals, and low-stock items based on time of day and demand.",
         reverse: true,
       },
+    ],
+    tabs: [
+      {
+        id: "layout",
+        title: "AI Layout Generation",
+        image: "/images/featuredImage2.jpg",
+        heading: "Create Designs with a Single Prompt",
+        subheading: "Describe your idea and our AI will generate stunning retail displays in seconds"
+      },
+      {
+        id: "analytics",
+        title: "Real-time Analytics",
+        image: "/images/FeaturedImage1.jpg",
+        heading: "Data-Driven Performance Insights",
+        subheading: "Track engagement and optimize your content with live metrics"
+      },
+      {
+        id: "scheduling",
+        title: "Smart Scheduling",
+        image: "/images/FeaturedImage3.jpg",
+        heading: "Automated Content Rotation",
+        subheading: "Schedule promotions and content based on time, day, or inventory levels"
+      },
+      {
+        id: "templates",
+        title: "Pre-built Templates",
+        image: "/images/FeaturedImage4.jpg",
+        heading: "Professional Designs in Minutes",
+        subheading: "Choose from hundreds of customizable templates for any retail need"
+      },
+      {
+        id: "integration",
+        title: "Seamless Integration",
+        image: "/images/FeaturedImage5.jpg",
+        heading: "Connect Your Existing Tools",
+        subheading: "Integrate with POS, inventory, and CRM systems for dynamic content"
+      }
     ],
   },
   {

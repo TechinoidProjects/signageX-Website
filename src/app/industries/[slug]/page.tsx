@@ -1,5 +1,6 @@
 import Hero from "@/components/common/Hero";
 import PromoSectionBlock from "@/components/Industries/IndustryPromoBlock";
+import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import CTA from "@/components/common/CTA";
 import { Dices } from "lucide-react";
 import { industries } from "@/lib/industriesData";
@@ -43,6 +44,12 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 },
                 ]
             }
+        />
+        <FeatureTabs
+          tabs={industry.tabs || []}
+          badgeText={industry.title}
+          heading={`Digital Signage for ${industry.title}`}
+          subheading={industry.description}
         />
 
       <CTA />
