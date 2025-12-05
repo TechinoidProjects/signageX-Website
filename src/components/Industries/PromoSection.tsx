@@ -33,7 +33,7 @@ const PromoSection = ({
       </div>
 
       {/* Content */}
-      <div className="w-full md:w-1/2 bg-white flex flex-col justify-between p-6 md:p-8 rounded-2xl h-100 md:h-[400px]">
+      <div className="w-full md:w-1/2 bg-white flex flex-col md:justify-between p-6 md:p-8 rounded-2xl h-auto md:h-100 md:h-[400px]">
         <h2 className="text-lg md:text-2xl font-semibold text-gray-800">{heading}</h2>
         <p className="text-gray-600 mt-4 leading-relaxed text-base md:text-md">{description}</p>
       </div>

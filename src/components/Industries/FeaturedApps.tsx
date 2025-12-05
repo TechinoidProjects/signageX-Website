@@ -24,7 +24,7 @@ export default function FeaturedApps({
   buttonHref = "#",
 }: FeaturedAppsProps) {
   return (
-    <section className="relative w-full bg-deep-purple-500 text-white py-16 overflow-hidden rounded-3xl my-6">
+    <section className="relative w-full bg-deep-purple-500 text-white py-16 overflow-hidden my-6">
       <div className="text-center mb-10 px-4">
         <Heading 
           title={headingTitle}
