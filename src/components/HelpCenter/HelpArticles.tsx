@@ -3,7 +3,7 @@ import { Heading } from "@/components/common/MainHeading";
 import  { DownloadCard } from "@/components/ui/cards/DownloadCard";
 import { Dices } from "lucide-react";
 
-export default function Hero() {
+export default function HelpArticles() {
   return (
     <section className="bg-background-light w-full h-full  py-16 md:py-6 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4 ">
