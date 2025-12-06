@@ -8,7 +8,7 @@ interface StepConnectorProps {
 export const StepConnector: React.FC<StepConnectorProps> = ({ stepId, connectorPath }) => {
   return (
     <svg
-      className="pointer-events-none absolute left-1/2 bottom-[-150px] hidden h-[160px] w-[720px] -translate-x-1/2 md:block"
+      className="pointer-events-none absolute left-1/2 bottom-[-150px] hidden h-40 w-[720px] -translate-x-1/2 md:block"
       viewBox="0 0 720 160"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

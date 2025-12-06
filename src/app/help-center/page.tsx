@@ -4,7 +4,7 @@ import HelpArticles from "@/components/HelpCenter/HelpArticles";
 import FreeTrialSection from "@/components/common/FreeTrialSection";
 import AllFAQs from "@/components/HelpCenter/AllFAQs";
 import CTA from "@/components/common/CTA";
-export default function HowItWorks() {
+export default function HelpCenter() {
   return (
     <main className="min-h-screen bg-white flex flex-col justify-start items-center mt-15">
       <Hero />

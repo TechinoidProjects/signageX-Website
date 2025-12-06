@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { Badge } from "../../ui/badge-default";
-import Image from "next/image";
 
-type Feature = {
+export type WhyChooseFeature = {
   id: string;
   title: string;
   tag: string;
@@ -14,7 +14,13 @@ type Feature = {
   subheading: string;
 };
 
-const FEATURES: Feature[] = [
+interface WhyChooseTabsProps {
+  features?: WhyChooseFeature[];
+  initialActiveId?: string;
+}
+
+/** Default fallback data */
+const DEFAULT_FEATURES: WhyChooseFeature[] = [
   {
     id: "smart",
     title: "Smarter AI Tools",
@@ -53,14 +59,19 @@ const FEATURES: Feature[] = [
   },
 ];
 
-export const WhyChooseTabs = () => {
-  const [active, setActive] = useState("smart");
-  const activeData = FEATURES.find((f) => f.id === active)!;
+export const WhyChooseTabs = ({
+  features = DEFAULT_FEATURES,
+  initialActiveId = features[0].id,
+}: WhyChooseTabsProps) => {
+  const [active, setActive] = useState(initialActiveId);
+
+  const activeData = features.find((f) => f.id === active)!;
 
   return (
     <section className="w-full flex justify-center items-center">
       <div className="flex flex-col md:flex-row gap-4 w-full">
 
+        {/* Left Image */}
         <div className="w-full md:w-[35%] rounded-2xl overflow-hidden">
           <div className="relative w-full h-[420px] rounded-2xl overflow-hidden">
             <Image
@@ -72,24 +83,24 @@ export const WhyChooseTabs = () => {
           </div>
         </div>
 
+        {/* Right Tabs */}
         <div className="w-full md:w-[65%] flex flex-col gap-4">
 
-          {FEATURES.map((item) => {
+          {features.map((item) => {
             const isActive = item.id === active;
 
             return (
               <div
                 key={item.id}
-                className={`rounded-2xl transition-all w-full
-                  ${isActive ? "bg-background-light" : ""}
-                `}
+                className={`rounded-2xl transition-all w-full ${
+                  isActive ? "bg-background-light" : ""
+                }`}
               >
                 <button
                   onClick={() => setActive(item.id)}
                   className="w-full flex items-center justify-between px-4 py-4"
                 >
-                  <div className="flex flex-col">
-                    
+                  <div className="flex flex-col w-full">
                     {!isActive && (
                       <div className="flex w-full items-center gap-4">
                         <span className="text-[15px] font-semibold text-neutral-800">
@@ -104,34 +115,33 @@ export const WhyChooseTabs = () => {
                         />
                       </div>
                     )}
-                    
-                  </div>
 
                     {isActive && (
                       <div className="w-full px-2 pb-5 pt-2">
-
                         <div className="flex flex-col gap-2 mb-2">
                           <div className="flex items-center gap-3">
                             <h3 className="md:text-lg text-md font-semibold text-neutral-800">
                               {item.heading}
                             </h3>
-                            
+
                             <Badge
                               text={item.tag}
                               variant="solid"
                               color="deepPurple"
                               showIcon={false}
                               size="sm"
-                              className="hidden! md:inline-flex!"
                             />
                           </div>
+
                           <p className="text-neutral-600 leading-relaxed text-left">
                             {item.subheading}
                           </p>
                         </div>
-
                       </div>
                     )}
+                  </div>
+
+                  {/* Arrow */}
                   <div className="bg-purple-400 p-2 rounded-xl text-white max-w-lg">
                     {isActive ? (
                       <ChevronUp className="w-4 h-4" />
@@ -139,7 +149,7 @@ export const WhyChooseTabs = () => {
                       <ChevronDown className="w-4 h-4" />
                     )}
                   </div>
-                </button>                
+                </button>
               </div>
             );
           })}
