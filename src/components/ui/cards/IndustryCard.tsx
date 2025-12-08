@@ -26,7 +26,8 @@ export const IndustryCard: React.FC<IndustryCardProps> = ({
           <Image
             src={imageSrc}
             alt={title}
-            fill
+            height={1080}
+            width={1080}
             className="object-cover"
           />
         </div>
