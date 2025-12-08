@@ -10,11 +10,11 @@ interface IndustryCardProps {
   href?: string;
 }
 
-export const IndustryCard: React.FC<IndustryCardProps> = ({
+export default function IndustryCard({
   imageSrc,
   title,
   href = "#",
-}) => {
+}: IndustryCardProps) {
   return (
     <div
       className="w-full h-full container mx-auto rounded-xl bg-background-light shadow-sm 

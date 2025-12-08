@@ -6,7 +6,7 @@ import AllFAQs from "@/components/Pricing/AllFAQs";
 import CTA from "@/components/common/CTA";
 export default function HowItWorks() {
   return (
-    <main className="min-h-screen bg-white flex flex-col justify-start items-center mt-15 bg-background-light">
+    <main className="min-h-screen flex flex-col justify-start items-center mt-15 bg-background-light">
         <SignagePricing
             badgeText="Pricing"
             heading="Simple Plans, Smarter Signage"
