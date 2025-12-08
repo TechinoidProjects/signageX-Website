@@ -70,8 +70,8 @@ export const FeatureTabs: React.FC<FeatureTabsProps> = ({
   heading = "Faster Design. Simpler Control",
   subheading = "Create, update, and manage visuals in a few clicks.",
 }) => {
-  const [activeTab, setActiveTab] = useState("layout");
-  const activeContent = tabs.find((tab) => tab.id === activeTab)!;
+  const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
+  const activeContent = tabs.find((tab) => tab.id === activeTab) || tabs[0];
 
   return (
     <section className="w-full flex justify-center items-center py-8 md:py-16 px-4">
@@ -115,20 +115,22 @@ export const FeatureTabs: React.FC<FeatureTabsProps> = ({
 
           <div className="w-full lg:w-2/3 bg-white rounded-2xl shadow-sm overflow-hidden">
             <div className="w-full relative h-[400px]">
-              <Image
-                src={activeContent.image}
-                alt={activeContent.title}
-                fill
-                className="object-cover"
-              />
+              {activeContent?.image && (
+                <Image
+                  src={activeContent.image}
+                  alt={activeContent?.title || 'Feature image'}
+                  fill
+                  className="object-cover"
+                />
+              )}
             </div>
 
             <div className="p-6">
               <h2 className="text-2xl font-display font-semibold text-gray-900 mb-2">
-                {activeContent.heading}
+                {activeContent?.heading || 'No content available'}
               </h2>
               <p className="text-gray-600 font-sans">
-                {activeContent.subheading}
+                {activeContent?.subheading || ''}
               </p>
             </div>
           </div>
