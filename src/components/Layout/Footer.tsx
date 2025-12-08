@@ -72,6 +72,7 @@ const Footer = () => {
                     { label: 'Solutions', href: '/solutions' },
                     { label: 'Download', href: '/download' },
                     { label: 'Pricing', href: '/pricing' },
+                    { label: 'Widgets', href: '/widgets' },
                   ].map(({ label, href }) => (
                     <li key={label}>
                       <Link href={href} className="text-sm text-gray-300 hover:text-white transition-colors">
@@ -90,7 +91,7 @@ const Footer = () => {
                     { label: 'Industries', href: '/industries' },
                     { label: 'How it works', href: '/how-it-works' },
                     { label: 'Blogs', href: '/blogs' },
-                    { label: 'Resources', href: '/resources' },
+                    { label: 'Resources', href: '/resourcers' },
                     { label: 'Help center', href: '/help-center' },
                   ].map(({ label, href }) => (
                     <li key={label}>
@@ -106,7 +107,7 @@ const Footer = () => {
               <div>
                 <h4 className="font-semibold text-base mb-4">Company</h4>
                 <ul className="space-y-3">
-                  {[{ label: 'About Us', href: '/about-us' },{ label: 'Reviews', href: '/reviews' }].map(({ label, href }) => (
+                  {[{ label: 'About Us', href: '/about-us' }].map(({ label, href }) => (
                     <li key={label}>
                       <Link href={href} className="text-sm text-gray-300 hover:text-white transition-colors">
                         {label}
@@ -136,7 +137,8 @@ const Footer = () => {
                 <ul className="space-y-2">
                   <li><Link href="/industries" className="text-xs text-gray-300 hover:text-white">Solutions</Link></li>
                   <li><Link href="/download" className="text-xs text-gray-300 hover:text-white">Download</Link></li>
-                  <li><Link href="/#pricing" className="text-xs text-gray-300 hover:text-white">Pricing</Link></li>
+                  <li><Link href="/pricing" className="text-xs text-gray-300 hover:text-white">Pricing</Link></li>
+                  <li><Link href="/widgets" className="text-xs text-gray-300 hover:text-white">Widgets</Link></li>
                 </ul>
               </div>
 
@@ -146,7 +148,7 @@ const Footer = () => {
                   <li><Link href="/industries" className="text-xs text-gray-300 hover:text-white">Industries</Link></li>
                   <li><Link href="/how-it-works" className="text-xs text-gray-300 hover:text-white">How it works</Link></li>
                   <li><Link href="/blogs" className="text-xs text-gray-300 hover:text-white">Blogs</Link></li>
-                  <li><Link href="/resources" className="text-xs text-gray-300 hover:text-white">Resources</Link></li>
+                  <li><Link href="/resourcers" className="text-xs text-gray-300 hover:text-white">Resources</Link></li>
                   <li><Link href="/help-center" className="text-xs text-gray-300 hover:text-white">Help center</Link></li>
                 </ul>
               </div>
@@ -155,7 +157,6 @@ const Footer = () => {
                 <h4 className="font-semibold text-sm mb-3">Company</h4>
                 <ul className="space-y-2">
                   <li><Link href="/about-us" className="text-xs text-gray-300 hover:text-white">About Us</Link></li>
-                  <li><Link href="/reviews" className="text-xs text-gray-300 hover:text-white">Reviews</Link></li>
                 </ul>
               </div>
             </div>
