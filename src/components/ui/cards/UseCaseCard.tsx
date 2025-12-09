@@ -19,6 +19,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
   title,
   description,
   buttonText = "View Details",
+  href,
   className,
 }) => {
   return (
@@ -42,7 +43,7 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({
         <p className="text-sm text-gray-500 leading-relaxed">
           {description}
         </p>
-        <Button size="lg" color="purple"  href="#" className="w-full">
+        <Button size="lg" color="purple"  href={href} className="w-full">
           {buttonText}
         </Button>
         
