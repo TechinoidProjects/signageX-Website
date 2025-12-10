@@ -28,8 +28,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             heading={`Transform ${industry.title} Experiences with Digital Signage`}
             subheading={industry.description}
             buttonText="Start Free Trial"
-            imageOneSrc={industry.imageSrc}
-            imageTwoSrc={industry.imageSrc}
+            imageOneSrc={industry.imageSrcOne}
+            imageTwoSrc={industry.imageSrcTwo}
         />
 
         <PromoSectionBlock
