@@ -1,6 +1,7 @@
 import Hero from "@/components/common/Hero";
 import CTA from "@/components/common/CTA";
 import ChallengeSection from "@/components/Solutions/ChallengeSection";
+import SolutionHighlightSection from "@/components/Solutions/SolutionHighlightSection";
 import { notFound } from "next/navigation";
 import { solutions } from '@/lib/solutionsData';
 
@@ -34,6 +35,17 @@ export default async function SolutionsPage({ params }: SolutionPageProps) {
           imageLeft={solution.challengeSection.imageLeft}
           imageRight={solution.challengeSection.imageRight}
           cards={solution.challengeSection.cards}
+        />
+      )}
+      {solution.solutionHighlightSection && (
+        <SolutionHighlightSection
+          badgeText={solution.solutionHighlightSection.badgeText}
+          heading={solution.solutionHighlightSection.heading}
+          subheading={solution.solutionHighlightSection.subheading}
+          topImage={solution.solutionHighlightSection.topImage}
+          bottomImage={solution.solutionHighlightSection.bottomImage}
+          topRightCard={solution.solutionHighlightSection.topRightCard}
+          bottomLeftCard={solution.solutionHighlightSection.bottomLeftCard}
         />
       )}
       <CTA />

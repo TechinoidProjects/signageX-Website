@@ -28,7 +28,15 @@ export interface Solution {
     imageRight: string;
     cards: { number: string; title: string; description: string }[];
   };
-  
+  solutionHighlightSection?: {
+    badgeText: string;
+    heading: string;
+    subheading: string;
+    topImage: string;
+    bottomImage: string;
+    topRightCard: { title: string; description: string };
+    bottomLeftCard: { title: string; description: string };
+  };
 }
 
 export const solutions: Solution[] = [
@@ -87,6 +95,24 @@ export const solutions: Solution[] = [
           description: 'Restaurants can’t react quickly to pricing, stock, or seasonal changes when menus are locked to print.',
         },
       ],
-    }
+    },
+    solutionHighlightSection: {
+      badgeText: 'Solution',
+      heading: 'Digital Menus That Sell',
+      subheading:
+        'Upgrade your dining space with vibrant, automated menu boards that work as hard as you.',
+      topImage: '/images/menu-promo-image-top.png',
+      bottomImage: '/images/menu-promo-image-bottom.png',
+      topRightCard: {
+        title: 'Seamless Control',
+        description:
+          'Update prices, items, and promotions instantly from one dashboard. No printing, no waiting, just effortless syncing across screens.',
+      },
+      bottomLeftCard: {
+        title: 'Engage Visually',
+        description:
+          'Showcase dynamic food imagery, daypart menus, and real-time offers that capture attention and drive spontaneous orders.',
+      },
+    },
   }
 ];
