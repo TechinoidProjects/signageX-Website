@@ -1,4 +1,4 @@
-import { Monitor, LayoutGrid, Smartphone, BarChart2, ShoppingCart, Users, MessageSquare, Calendar } from 'lucide-react';
+import { Clock, Receipt, Sparkles, type LucideIcon } from "lucide-react";
 
 export interface Solution {
   id: string;
@@ -28,6 +28,7 @@ export interface Solution {
     imageRight: string;
     cards: { number: string; title: string; description: string }[];
   };
+
   solutionHighlightSection?: {
     badgeText: string;
     heading: string;
@@ -36,6 +37,37 @@ export interface Solution {
     bottomImage: string;
     topRightCard: { title: string; description: string };
     bottomLeftCard: { title: string; description: string };
+  };
+
+  featureTabs?: {
+    badgeText: string;
+    heading: string;
+    subheading: string;
+    tabs: Array<{
+      id: string;
+      title: string;
+      tag: string;
+      image: string;
+      heading: string;
+      subheading: string;
+
+    }>
+  };
+
+  featuredApps?: {
+    cards: Array<{
+      id: number;
+      image: string;
+      title: string;
+    }>;
+  };
+
+  FeatureItem?: {
+    Items: Array<{
+      icon: LucideIcon;
+      title: string;
+      description: string;
+    }>;
   };
 }
 
@@ -114,5 +146,77 @@ export const solutions: Solution[] = [
           'Showcase dynamic food imagery, daypart menus, and real-time offers that capture attention and drive spontaneous orders.',
       },
     },
+    featureTabs: {
+      badgeText: "Effortless",
+      heading: "Faster Design. Simpler Control.",
+      subheading: "Create, update, and manage visuals in just a few clicks, powered by AI and smart automation.",
+      tabs: [
+        {
+          id: "smart",
+          title: "Grow Without Limits",
+          tag: "Scalability",
+          image: "/images/about-image-one.png",
+          heading: "Grow Without Limits",
+          subheading: "SignageX adapts seamlessly from single stores to nationwide retail chains, ensuring consistent branding and communication everywhere."
+        },
+        {
+          id: "hardware",
+          title: "Use Existing Hardware",
+          tag: "COST-EFFICIENT",
+          image: "/images/featuredImage1.jpg",
+          heading: "Use Existing Hardware",
+        subheading:
+          "Our AI simplifies content creation and navigation. Build apps, widgets, and layouts in minutes.",
+      },
+      {
+        id: "hub",
+        title: "Centralized Management Hub",
+        tag: "CONTROL",
+        image: "/images/featuredImage2.jpg",
+        heading: "Centralized Management Hub",
+        subheading:
+          "Organize, assign, and update screens from one unified dashboard with full automation.",
+      },
+      {
+        id: "support",
+        title: "Reliable 24/7 Support",
+        tag: "TRUST",
+        image: "/images/featuredImage3.jpg",
+        heading: "Reliable Support",
+        subheading:
+          "Our support ensures smooth operations, uptime, and long-term stability for all deployments.",
+      },
+      ]
+    },
+    featuredApps: {
+      cards: [
+        { id: 1, image: "/images/featuredImage1.jpg", title: "October Event" },
+        { id: 2, image: "/images/featuredImage2.jpg", title: "Quiz Time" },
+        { id: 3, image: "/images/featuredImage3.jpg", title: "Fun Facts" },
+        { id: 4, image: "/images/featuredImage4.jpg", title: "Mosquito Trivia" },
+        { id: 5, image: "/images/featuredImage5.jpg", title: "November Event" },
+      ],
+    },
+    FeatureItem: {
+      Items: [
+        {
+          icon: Clock,
+          title: "Faster Updates",
+          description: "Change menus instantly without printing delays.",
+        },
+        {
+          icon: Receipt,
+          title: "Higher Sales",
+          description: "Promote combos and specials that boost order value.",
+        },
+        {
+          icon: Sparkles,
+          title: "Better Experience",
+          description: "Enhance visibility and speed up customer decisions.",
+        },
+      ]
+    },
+    
   }
+
 ];

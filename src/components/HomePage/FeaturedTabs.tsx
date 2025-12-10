@@ -70,8 +70,8 @@ export const FeatureTabs: React.FC<FeatureTabsProps> = ({
   heading = "Faster Design. Simpler Control",
   subheading = "Create, update, and manage visuals in a few clicks.",
 }) => {
-  const [activeTab, setActiveTab] = useState("layout");
-  const activeContent = tabs.find((tab) => tab.id === activeTab)!;
+  const [activeTab, setActiveTab] = useState(tabs[0]?.id || "");
+  const activeContent = tabs.find((tab) => tab.id === activeTab) || tabs[0] || null;
 
   return (
     <section className="w-full flex justify-center items-center py-8 md:py-16 px-4">

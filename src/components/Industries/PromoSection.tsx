@@ -36,8 +36,7 @@ const PromoSection = ({
         />
       </div>
 
-      {/* Content */}
-      <div className={`w-full md:w-1/2 ${bgColor || 'text-white'} flex flex-col md:justify-between p-6 md:p-8 rounded-2xl h-auto md:h-100 md:h-[400px]`}>
+      <div className={`w-full md:w-1/2 ${bgColor || 'text-white'} flex flex-col md:justify-between p-6 md:p-8 rounded-2xl h-auto md:h-100`}>
         <h2 className={`text-lg md:text-2xl font-display font-semibold ${textColor || 'text-gray-800'}`}>{heading}</h2>
         <p className={`${textColor ? `${textColor}/70` : 'text-gray-600'} font-sans mt-4 leading-relaxed text-base md:text-md`}>{description}</p>
       </div>

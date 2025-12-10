@@ -2,6 +2,7 @@ import Hero from "@/components/common/Hero";
 import CTA from "@/components/common/CTA";
 import ChallengeSection from "@/components/Solutions/ChallengeSection";
 import SolutionHighlightSection from "@/components/Solutions/SolutionHighlightSection";
+import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import { notFound } from "next/navigation";
 import { solutions } from '@/lib/solutionsData';
 
@@ -48,6 +49,15 @@ export default async function SolutionsPage({ params }: SolutionPageProps) {
           bottomLeftCard={solution.solutionHighlightSection.bottomLeftCard}
         />
       )}
+      {solution.featureTabs && (
+        <FeatureTabs
+          tabs={solution.featureTabs.tabs}
+          badgeText={solution.featureTabs.badgeText}
+          heading={solution.featureTabs.heading}
+          subheading={solution.featureTabs.subheading}
+        />
+      )}
+      
       <CTA />
     </main>
   );
