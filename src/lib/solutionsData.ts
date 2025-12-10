@@ -20,6 +20,15 @@ export interface Solution {
       reverse?: boolean;
     }>;
   };
+  challengeSection?: {
+    badgeText: string;
+    heading: string;
+    subheading: string;
+    imageLeft: string;
+    imageRight: string;
+    cards: { number: string; title: string; description: string }[];
+  };
+  
 }
 
 export const solutions: Solution[] = [
@@ -54,6 +63,30 @@ export const solutions: Solution[] = [
           reverse: true
         }
       ]
+    },
+    challengeSection: {
+      badgeText: 'The Challenge',
+      heading: 'Outdated Menus Limit Growth',
+      subheading: "Static boards can’t keep up with fast-changing offers, pricing, or customer expectations in today’s dynamic dining world.",
+      imageLeft: '/images/challenge-menu-board-left.png',
+      imageRight: '/images/challenge-menu-board-right.png',
+      cards: [
+        {
+          number: "01",
+          title: 'Manual Updates',
+          description: 'Changing menus takes time and often leads to inconsistent branding across locations and screens.',
+        },
+        {
+          number: "02",
+          title: 'Low Engagement',
+          description: 'Static boards struggle to capture attention or promote upsells effectively compared to dynamic content.',
+        },
+        {
+          number: "03",
+          title: 'Limited Agility',
+          description: 'Restaurants can’t react quickly to pricing, stock, or seasonal changes when menus are locked to print.',
+        },
+      ],
     }
   }
 ];
