@@ -1,4 +1,4 @@
-import { IndustryCard } from "@/components/ui/cards/IndustryCard";
+import IndustryCard from "@/components/ui/cards/IndustryCard";
 import { Badge } from "@/components/ui/badge-default";
 import { Heading } from "@/components/common/MainHeading";
 import { Dices } from "lucide-react";

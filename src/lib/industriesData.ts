@@ -17,6 +17,8 @@ export type Industry = {
   subheading?: string;
   description: string;
   imageSrc: string;
+  imageSrcOne: string;
+  imageSrcTwo: string;
   reverse?: boolean;
   promoSections?: IndustryPromoSection[];
   tabs?: Tab[];
@@ -49,7 +51,9 @@ export const industries: Industry[] = [
     subheading: "Retail",
     description:
       "Retail digital signage displays showcase real-time discounts, seasonal promotions, and new arrivals, driving impulse purchases and increasing foot traffic.",
-    imageSrc: "/images/FeaturedImage1.jpg",
+    imageSrc: "/images/Retail.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage1.jpg",
@@ -154,7 +158,9 @@ export const industries: Industry[] = [
     subheading: "Corporate",
     description:
       "Use digital screens across your offices to broadcast announcements, KPIs, and important internal news to keep teams aligned and informed.",
-    imageSrc: "/images/FeaturedImage5.jpg",
+    imageSrc: "/images/Corporate.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     reverse: true,
     promoSections: [
       {
@@ -260,7 +266,9 @@ export const industries: Industry[] = [
     subheading: "Healthcare",
     description:
       "Improve patient experience and communication with waiting-room displays, wayfinding, and real-time queue information.",
-    imageSrc: "/images/FeaturedImage2.jpg",
+    imageSrc: "/images/Healthcare.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage2.jpg",
@@ -365,7 +373,9 @@ export const industries: Industry[] = [
     subheading: "Education",
     description:
       "Engage students and staff with campus-wide announcements, timetables, and event promotions on digital displays.",
-    imageSrc: "/images/FeaturedImage3.jpg",
+    imageSrc: "/images/Education.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     reverse: true,
     promoSections: [
       {
@@ -433,7 +443,9 @@ export const industries: Industry[] = [
     subheading: "F&B",
     description:
       "Dynamic menu boards, upsells, and promotions that are easy to update and optimize for dayparts and inventory.",
-    imageSrc: "/images/FeaturedImage2.jpg",
+    imageSrc: "/images/Restaurants.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage2.jpg",
@@ -456,7 +468,9 @@ export const industries: Industry[] = [
     subheading: "Hospitality",
     description:
       "Enhance guest experience with digital concierge screens, event information, and real-time offers across properties.",
-    imageSrc: "/images/FeaturedImage4.jpg",
+    imageSrc: "/images/Hospitality.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage4.jpg",
@@ -479,7 +493,9 @@ export const industries: Industry[] = [
     subheading: "Government",
     description:
       "Securely share public service announcements, queue information, and guidance across facilities and kiosks.",
-    imageSrc: "/images/FeaturedImage3.jpg",
+    imageSrc: "/images/Government.png",
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage3.jpg",
@@ -502,7 +518,10 @@ export const industries: Industry[] = [
     subheading: "Transport",
     description:
       "Display arrival/departure info, alerts, and wayfinding across stations and terminals in real-time.",
-    imageSrc: "/images/FeaturedImage1.jpg",
+    imageSrc: "/images/Transport.png",
+    
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     reverse: true,
     promoSections: [
       {
@@ -526,7 +545,10 @@ export const industries: Industry[] = [
     subheading: "Fitness",
     description:
       "Motivate members with class schedules, performance leaderboards, and targeted promotions on screens around your gym.",
-    imageSrc: "/images/FeaturedImage5.jpg",
+    imageSrc: "/images/Fitness.png",
+    
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage5.jpg",
@@ -549,7 +571,10 @@ export const industries: Industry[] = [
     subheading: "Entertainment",
     description:
       "Drive ticket sales and promote upcoming events across venues using dynamic, eye-catching displays.",
-    imageSrc: "/images/FeaturedImage1.jpg",
+    imageSrc: "/images/Entertainment.png",
+    
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage1.jpg",
@@ -572,7 +597,10 @@ export const industries: Industry[] = [
     subheading: "Finance",
     description:
       "Communicate product updates, queue info, and marketing messages across branches and digital touchpoints.",
-    imageSrc: "/images/FeaturedImage2.jpg",
+    imageSrc: "/images/Financial-Institutions.png",
+    
+    imageSrcOne: "/images/FeaturedImage4.jpg",
+    imageSrcTwo: "/images/FeaturedImage2.jpg",
     promoSections: [
       {
         imageSrc: "/images/FeaturedImage2.jpg",
