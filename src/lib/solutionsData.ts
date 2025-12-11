@@ -1,4 +1,10 @@
-import { Clock, Receipt, Sparkles, type LucideIcon } from "lucide-react";
+export type IconName = 'clock' | 'receipt' | 'sparkles';
+
+export interface FeatureItem {
+  icon: IconName;
+  title: string;
+  description: string;
+}
 
 export interface Solution {
   id: string;
@@ -63,11 +69,7 @@ export interface Solution {
   };
 
   FeatureItem?: {
-    Items: Array<{
-      icon: LucideIcon;
-      title: string;
-      description: string;
-    }>;
+    Items: FeatureItem[];
   };
 }
 
@@ -200,17 +202,17 @@ export const solutions: Solution[] = [
     FeatureItem: {
       Items: [
         {
-          icon: Clock,
+          icon: 'clock',
           title: "Faster Updates",
           description: "Change menus instantly without printing delays.",
         },
         {
-          icon: Receipt,
+          icon: 'receipt',
           title: "Higher Sales",
           description: "Promote combos and specials that boost order value.",
         },
         {
-          icon: Sparkles,
+          icon: 'sparkles',
           title: "Better Experience",
           description: "Enhance visibility and speed up customer decisions.",
         },

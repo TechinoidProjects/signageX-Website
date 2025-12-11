@@ -4,6 +4,7 @@ import ChallengeSection from "@/components/Solutions/ChallengeSection";
 import SolutionHighlightSection from "@/components/Solutions/SolutionHighlightSection";
 import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import FeaturedApps from "@/components/Industries/FeaturedApps";
+import FeatureList from "@/components/Solutions/FeatureList";
 import { notFound } from "next/navigation";
 import { solutions } from '@/lib/solutionsData';
 
@@ -70,6 +71,7 @@ export default async function SolutionsPage({ params }: SolutionPageProps) {
         buttonHref="/widgets/retail"
         shownButton={false}
       />
+      <FeatureList items={solution.FeatureItem?.Items} />
       <CTA />
     </main>
   );
