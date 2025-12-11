@@ -19,7 +19,7 @@ const StepCard: React.FC<StepCardProps> = ({
   gradientClass = "bg-gradient-primary",
 }) => {
   return (
-    <div className="w-full md:w-[31.7%] xl:max-w-[32%]">
+    <div className="w-full md:max-w-[48%] lg:w-[31.7%] xl:max-w-[32%]">
       <div
         className={`relative w-full flex flex-col justify-between ${gradientClass} h-[417px] rounded-3xl shadow-card p-6 overflow-hidden transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl`}
       >
