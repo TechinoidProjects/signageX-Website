@@ -2,6 +2,7 @@ import Hero from "@/components/common/Hero";
 import CTA from "@/components/common/CTA";
 import ChallengeSection from "@/components/Solutions/ChallengeSection";
 import SolutionHighlightSection from "@/components/Solutions/SolutionHighlightSection";
+import GetStarted from "@/components/HomePage/GetStarted";
 import { FeatureTabs } from "@/components/HomePage/FeaturedTabs";
 import FeaturedApps from "@/components/Industries/FeaturedApps";
 import FeatureList from "@/components/Solutions/FeatureList";
@@ -72,6 +73,8 @@ export default async function SolutionsPage({ params }: SolutionPageProps) {
         shownButton={false}
       />
       <FeatureList items={solution.FeatureItem?.Items} />
+      <GetStarted />
+      
       <CTA />
     </main>
   );
