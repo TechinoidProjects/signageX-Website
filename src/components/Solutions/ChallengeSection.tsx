@@ -30,13 +30,13 @@ export const ChallengeSection: React.FC<ChallengeSectionProps> = ({
 }) => {
   return (
     <section className="w-full flex justify-center items-center py-12 md:py-16 bg-background-light">
-      <div className="container mx-auto flex flex-col gap-8 md:gap-10 items-center">
+      <div className="container mx-auto flex flex-col gap-8 md:gap-10 items-center ">
         <div className="flex flex-col items-center gap-3 text-center">
           <Badge text={badgeText} variant="outline" color="custom" />
           <Heading title={heading} subtitle={subheading} />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full px-4 xl:px-0">
           <div className="relative w-full h-56 sm:h-72 md:h-80 rounded-2xl overflow-hidden bg-black/5">
             <Image
               src={imageRight}
