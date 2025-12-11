@@ -2,8 +2,10 @@ import { Badge } from "@/components/ui/badge-default";
 import { Heading } from "@/components/common/MainHeading";
 import { Dices } from "lucide-react";
 import BlogCard from "@/components/ui/cards/BlogCard";
+import { blogs } from "@/lib/blogsData";
 
 export default function FeaturedBlogs() {
+  const featuredBlogs = blogs.filter((blog) => blog.isFeatured).slice(0, 3);
   return (
     <section className="bg-background-light w-full flex justify-center items-center py-8 md:py-16 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center  ">
@@ -23,40 +25,32 @@ export default function FeaturedBlogs() {
           />
         </div>
 
-        <BlogCard
-          image="/images/blog-card-image-one.png"
-          category="Restaurants"
-          date="Sep 04, 2025"
-          author="Michael Kirnan"
-          title="AI Digital Signage Trends 2025"
-          description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-          readMoreHref="/blogs/ai-digital-signage"
-          readTime="8"
-
-        />
+        {featuredBlogs.length > 0 && (
+          <BlogCard
+            image={featuredBlogs[0].image}
+            category={featuredBlogs[0].category}
+            date={featuredBlogs[0].date}
+            author={featuredBlogs[0].author}
+            title={featuredBlogs[0].title}
+            description={featuredBlogs[0].description}
+            readMoreHref={`/blogs/${featuredBlogs[0].slug}`}
+            readTime={featuredBlogs[0].readTime}
+          />
+        )}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:py-10">
-          <BlogCard
-                image="/images/blog-card-image-two.png"
-                category="Restaurants"
-                date="Sep 04, 2025"
-                author="Michael Kirnan"
-                title="AI Digital Signage Trends 2025"
-                description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-                readMoreHref="/blogs/ai-digital-signage"
-                readTime="8"
-
+          {featuredBlogs.slice(1, 3).map((blog) => (
+            <BlogCard
+              key={blog.id}
+              image={blog.image}
+              category={blog.category}
+              date={blog.date}
+              author={blog.author}
+              title={blog.title}
+              description={blog.description}
+              readMoreHref={`/blogs/${blog.slug}`}
+              readTime={blog.readTime}
             />
-          <BlogCard
-                image="/images/blog-card-image-three.png"
-                category="Restaurants"
-                date="Sep 04, 2025"
-                author="Michael Kirnan"
-                title="AI Digital Signage Trends 2025"
-                description="Discover how AI-powered digital signage software is shaping the future of retail, healthcare, and education, driving engagement and saving costs with smarter displays."
-                readMoreHref="/blogs/ai-digital-signage"
-                readTime="8"
-
-            />
+          ))}
         </div>
       </div>
     </section>

@@ -13,7 +13,7 @@ const COLOR_MAP = {
     outline: "bg-transparent text-neutral-500 border-neutral-400",
   },
   white:{
-    solid: "bg-white text-gray-900 border-gray-300",
+    solid: "bg-white text-purple-300 border-0",
     outline: "bg-transparent text-white border-white",
   },
   lightPurple: {
