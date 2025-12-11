@@ -35,7 +35,7 @@ export default function Hero({
           <Badge text={badgeText} icon={Dices} variant="outline" color="custom" />
           <Heading title={heading} subtitle={subheading} />
           {buttonShown &&
-            <Button size="lg" color="purple">{buttonText}</Button>
+            <Button size="lg" href="#" color="purple">{buttonText}</Button>
           }
         </div>
         <div className="container flex flex-col md:flex-row justify-between gap-4 xl:gap-8 w-full px-4 xl:px-0">
