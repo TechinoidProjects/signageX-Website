@@ -15,7 +15,7 @@ type Tab = {
 };
 
 interface FeatureTabsProps {
-  tabs?: Tab[];                  
+  tabs?: Tab[];                 
   badgeText?: string;
   heading?: string;
   subheading?: string;
