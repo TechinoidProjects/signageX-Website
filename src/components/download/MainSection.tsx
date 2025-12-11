@@ -22,25 +22,25 @@ export default function MainSection() {
         </div>
         <div className="grid grid-cols-2 w-full gap-6">
             <DownloadCard
-                href="/downloads/macos"
+                href="/download/macos"
                 logo="/images/Apple.png"
                 title="macOS"
                 version="Version 10.25.36"
             />
             <DownloadCard
-                href="/downloads/chrome"
+                href="/download/chrome"
                 logo="/images/Chrome.png"
                 title="Chrome"
                 version="Version 10.25.36"
             />
             <DownloadCard
-                href="/downloads/windows"
+                href="/download/windows"
                 logo="/images/Windows.png"
                 title="Windows"
                 version="Version 10.25.36"
             />
             <DownloadCard
-                href="/downloads/android"
+                href="/download/android"
                 logo="/images/Android.png"
                 title="Android"
                 version="Version 10.25.36"
