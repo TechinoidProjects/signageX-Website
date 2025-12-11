@@ -46,6 +46,13 @@ const FAQ_DATA = [
     heading: "How often is the software updated?",
     subheading:
       "We regularly release updates to improve performance, add new features, and enhance security. Most updates are automatic, ensuring you always have access to the latest version without needing to manually install anything.",
+  },
+  {
+    id: "Security",
+    tag: "Security",
+    heading: "Is my data safe on SignageX?",
+    subheading:
+      "We prioritize data security and privacy. SignageX employs industry-standard encryption, secure data centers, and regular security audits to protect your information. We also comply with relevant data protection regulations to ensure your data is handled responsibly.",
   }
 ];
 

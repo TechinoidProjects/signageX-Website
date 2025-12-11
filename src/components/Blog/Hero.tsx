@@ -3,7 +3,7 @@ import { Heading } from "@/components/common/MainHeading";
 import { Dices } from "lucide-react";
 import Image from "next/image";
 
-export default function Blogs() {
+export default function Hero() {
   return (
     <section className="bg-white w-full flex-col justify-center items-center py-16 md:py-6 px-4">
       <div className=" container mx-auto flex flex-col justify-center items-center md:gap-4 ">

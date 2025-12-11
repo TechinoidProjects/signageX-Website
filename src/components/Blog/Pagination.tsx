@@ -9,24 +9,12 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
   return (
     <div className="flex gap-3 items-center">
 
-      {/* Prev */}
-      {/* <button
-        disabled={page === 1}
-        
-        className={`px-4 py-2 rounded-lg border 
-        ${page === 1 ? "opacity-40 cursor-not-allowed" : "hover:bg-gray-100"}`}
-      >
-        Prev
-      </button> */}
-
       <button
         onClick={() => onChange(page - 1)}
         className={`${page === 1 ? "opacity-40 cursor-not-allowed" : "hover:border-neutral-400/60"} w-10 h-10 flex items-center justify-center rounded-full border-3 border-neutral-400/30 transition`}
       >
         <ArrowBigLeft className="w-5 h-5 text-neutral-700" />
       </button>
-
-      {/* Page Numbers */}
       {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
         <button
           key={num}
@@ -41,20 +29,6 @@ export default function Pagination({ page, totalPages, onChange }: PaginationPro
           {num}
         </button>
       ))}
-
-      {/* Next */}
-      {/* <button
-        disabled={page === totalPages}
-        onClick={() => onChange(page + 1)}
-        className={`px-4 py-2 rounded-lg border 
-        ${
-          page === totalPages
-            ? "opacity-40 cursor-not-allowed"
-            : "hover:bg-gray-100"
-        }`}
-      >
-        Next
-      </button> */}
       <button
         onClick={() => onChange(page + 1)}
         className={`w-10 h-10 flex items-center justify-center rounded-full border-3 border-neutral-400/30 transition ${

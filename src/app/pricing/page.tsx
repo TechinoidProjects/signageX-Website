@@ -4,7 +4,7 @@ import SignageXPlans from "@/components/Pricing/SignageXPlans";
 import PricingTable from "@/components/Pricing/PricingTable";
 import AllFAQs from "@/components/Pricing/AllFAQs";
 import CTA from "@/components/common/CTA";
-export default function HowItWorks() {
+export default function Pricing() {
   return (
     <main className="min-h-screen flex flex-col justify-start items-center mt-15 bg-background-light">
         <SignagePricing
