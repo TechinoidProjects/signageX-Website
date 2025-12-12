@@ -16,14 +16,14 @@ export const CircleHighlight: React.FC<CircleHighlightProps> = ({
 }) => {
   return (
     <div
-      className={`rounded-full aspect-square flex flex-col items-center justify-center text-white text-center
+      className={`rounded-2xl lg:rounded-full p-4 md:p-6 lg:aspect-square flex flex-col items-center justify-center text-white text-center
       shadow-lg hover:shadow-xl hover:scale-[1.03] transition-all duration-300
       bg-gradient-primary
       ${className}`}
     >
-      <Icon className="w-15 h-15 md:w-7 md:h-7 mb-2 opacity-90" />
-      <p className="text-4xl md:text-2xl font-bold">{value}</p>
-      <p className="text-xl md:text-sm opacity-90">{label}</p>
+      <Icon className="lg:w-15 lg:h-15 w-7 h-7 mb-2 opacity-90" />
+      <p className="text-xl lg:text-2xl lg:text-3xl font-bold">{value}</p>
+      <p className="text-xs lg:text-sm opacity-90">{label}</p>
     </div>
   );
 };

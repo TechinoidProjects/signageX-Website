@@ -22,9 +22,7 @@ const Navbar = () => {
 
   return (
     <header className="w-full fixed top-0 z-50 bg-background-light shadow-sm">
-      {/* Desktop Navbar */}
-      <nav className="hidden md:flex h-16 container mx-auto items-center justify-between relative">
-        {/* Left Links */}
+      <nav className="hidden md:flex h-16 container mx-auto items-center px-4 xl:px-0 justify-between relative">
         <div className="flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
             <Link
@@ -37,7 +35,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Center Logo */}
         <div className="absolute left-1/2 -translate-x-1/2">
           <Link href="/">
             <Image
@@ -50,7 +47,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Right Buttons */}
         <div className="flex items-center gap-3">
           <Button size="sm" 
             outline
@@ -64,9 +60,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Navbar */}
       <nav className="flex md:hidden items-center justify-between px-4 h-16 relative">
-        {/* Logo */}
         <div>
           <Link href="/">
             <Image
