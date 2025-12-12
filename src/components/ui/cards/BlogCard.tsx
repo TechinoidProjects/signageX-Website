@@ -35,6 +35,8 @@ export default function BlogCard(props: BlogCardProps) {
   const isHorizontal = direction === "horizontal";
   const isColor = color === "normal";
 
+  const truncatedTitle = title.length > 35 ? `${title.slice(0, 35)}...` : title;
+
   return (
     <div
       className={`w-full rounded-2xl shadow-sm overflow-hidden flex ${
@@ -65,7 +67,7 @@ export default function BlogCard(props: BlogCardProps) {
             </p>
 
             <h2 className="text-2xl md:text-3xl font-display font-semibold text-gray-900 mt-3 leading-snug">
-              {title}
+              {truncatedTitle}
             </h2>
 
             <p className="text-gray-600 mt-3 line-clamp-3 text-md font-sans">{description}</p>

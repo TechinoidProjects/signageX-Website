@@ -10,27 +10,29 @@ interface BlogSlugPageProps {
 
 export default async function BlogSlugPage({ params }: BlogSlugPageProps) {
   const { slug } = await params;
-const blog = blogs.find((item) => item.slug === slug)
+  const blog = blogs.find((item) => item.slug === slug);
 
   if (!blog) {
     notFound();
   }
 
+  const sections = blog.sections ?? [];
+
   return (
     <main className="min-h-screen bg-white flex flex-col items-center mt-0 md:mt-15">
       <BlogDetailHero
-        badge="Restaurants"
-        title="Transform Your Restaurant with Smart Digital Signage"
-        description="Discover how SignageX can boost customer experience and streamline operations."
+        badge={blog.industry ?? blog.category}
+        title={blog.title}
+        description={blog.heroSubtitle}
         author={{
-          image: "/images/avatar1.png",
-          name: "Michael Kirnan",
-          designation: "Senior Software Engineer",
+          image: blog.authorImage,
+          name: blog.author,
+          designation: blog.authorRole,
         }}
-        readTime="6 min"
-        date="Sep 04, 2025"
-        thumbnail="/images/blog-image-main.jpg"
-        />
+        readTime={blog.readTime}
+        date={blog.date}
+        thumbnail={blog.image}
+      />
     </main>
   );
 }

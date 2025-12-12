@@ -29,8 +29,7 @@ const BlogDetailHero: React.FC<BlogDetailHeroProps> = ({
   thumbnail,
 }) => {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-10 space-y-6">
-      {/* Badge */}
+    <div className="w-full container mx-auto md:px-0 px-4 md:py-10 py-16 space-y-6">
       <Badge
         text={badge}
         showIcon={false}
@@ -38,17 +37,13 @@ const BlogDetailHero: React.FC<BlogDetailHeroProps> = ({
         color="white"
       />
 
-      {/* Heading */}
       <h1 className="text-3xl md:text-5xl font-bold text-neutral-500 leading-tight">
         {title}
       </h1>
 
-      {/* Description */}
       <p className="text-gray-600 text-lg max-w-3xl">{description}</p>
 
-      {/* Bottom Row */}
       <div className="flex items-center justify-between">
-        {/* Left: Author */}
         <div className="flex items-center gap-3">
           <Image
             src={author.image}
@@ -63,7 +58,6 @@ const BlogDetailHero: React.FC<BlogDetailHeroProps> = ({
           </div>
         </div>
 
-        {/* Right: Meta info */}
         <div className="text-right">
           <p className="text-gray-600 text-sm">{readTime} read</p>
           <p className="text-gray-400 text-sm">{date}</p>
