@@ -23,7 +23,7 @@ export default function WidgetCard({ item }: WidgetCardProps) {
         <div className="bg-neutral-100/50 h-3 w-20 rounded-full"></div>
       </div>
 
-      <div className="relative w-full flex-1 flex items-center justify-center bg-gray-100">
+      <div className="relative w-full flex-1 flex items-center justify-center bg-gray-100 min-h-[80%]">
         <Image
           src={item.image}
           alt={item.title}

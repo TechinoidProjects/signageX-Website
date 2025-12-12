@@ -28,7 +28,7 @@ const PricingCard: FC<PricingCardProps> = ({
   icon,
 }) => {
   return (
-    <div className="w-full sm:w-[48%] md:w-[31.7%] xl:w-[32%] bg-background-light rounded-2xl shadow-md p-6 border border-transparent hover:border-purple-300 hover:border-2 hover:scale-[1.02] transition-all duration-100 flex flex-col gap-5">
+    <div className="w-full sm:w-[48%] lg:w-[31.7%] xl:w-[32%] bg-background-light rounded-2xl shadow-md p-6 border border-transparent hover:border-purple-300 hover:border-2 hover:scale-[1.02] transition-all duration-100 flex flex-col gap-5">
       <div className="flex justify-between items-start">
         <div className="flex items-start gap-1 flex-col">
           <div className="flex items-center gap-2">
