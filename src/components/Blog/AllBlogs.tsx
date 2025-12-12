@@ -6,6 +6,7 @@ import { Heading } from "@/components/common/MainHeading";
 import { Dices, Search } from "lucide-react";
 import BlogCard from "@/components/ui/cards/BlogCard";
 import Pagination from "./Pagination";
+import type { Blog } from "@/lib/blogsData";
 
 const categories = [
   "All",
@@ -18,16 +19,6 @@ const categories = [
   "Success Stories",
   "Data Insights",
 ];
-
-interface Blog {
-  id: number;
-  image: string;
-  category: string;
-  date: string;
-  author: string;
-  title: string;
-  description: string;
-}
 
 export default function SearchAndFilter({ blogs }: { blogs: Blog[] }) {
   const [activeTab, setActiveTab] = useState("All");
@@ -114,7 +105,19 @@ export default function SearchAndFilter({ blogs }: { blogs: Blog[] }) {
         }
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-14">
         {paginatedBlogs.map((blog) => (
-          <BlogCard key={blog.id} readMoreHref={`/blogs/${blog.id}`}  direction="vertical" color = "invert" {...blog} />
+          <BlogCard
+            key={blog.id}
+            readMoreHref={`/blogs/${blog.slug}`}
+            direction="vertical"
+            color="invert"
+            image={blog.image}
+            category={blog.category}
+            date={blog.date}
+            author={blog.author}
+            title={blog.title}
+            description={blog.description}
+            readTime={blog.readTime}
+          />
         ))}
       </div>
 
