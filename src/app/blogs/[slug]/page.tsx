@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import BlogDetailHero from "@/components/Blog/BlogDetailHero";
 import { blogs } from "@/lib/blogsData";
+import BlogContentLayout from "@/components/Blog/BlogContentLayout";
 
 interface BlogSlugPageProps {
   params: Promise<{
@@ -33,6 +34,8 @@ export default async function BlogSlugPage({ params }: BlogSlugPageProps) {
         date={blog.date}
         thumbnail={blog.image}
       />
+
+      <BlogContentLayout sections={sections} />
     </main>
   );
 }
